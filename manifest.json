@@ -1,0 +1,16 @@
+{
+    "name": "Michael Lee's Portfolio",
+    "short_name": "ML's Portfolio",
+    "icons": [
+      {
+        "src": "android-chrome-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "theme_color": "#FFFFFF",
+    "background_color": "#FFFFFF",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait"
+  }

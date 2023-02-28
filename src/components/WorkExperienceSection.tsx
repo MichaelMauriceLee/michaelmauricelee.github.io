@@ -1,4 +1,4 @@
-import { Card } from 'flowbite-react';
+import Card from './Card';
 import { useTranslation } from 'react-i18next';
 import { useInView } from 'react-intersection-observer';
 import type { WorkExperience } from '../types';

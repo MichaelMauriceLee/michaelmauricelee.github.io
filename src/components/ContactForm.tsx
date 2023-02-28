@@ -4,9 +4,10 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { BaseSyntheticEvent, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Alert, Button, Card, Spinner } from 'flowbite-react';
+import { Alert, Button, Spinner } from 'flowbite-react';
 import { useInView } from 'react-intersection-observer';
 import i18next from 'i18next';
+import Card from './Card';
 
 const FormValues = z.object({
   name: z.string().min(1, i18next.t('errors.nameRequired') ?? ''),

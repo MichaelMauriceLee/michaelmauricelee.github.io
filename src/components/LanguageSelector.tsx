@@ -12,9 +12,7 @@ const LanguageSelector = () => {
     const { target } = event;
 
     location.href = `${location.origin}${
-      i18nextConfig.defaultLocale === target.value
-        ? location.hash
-        : `/${target.value}${location.hash}`
+      i18nextConfig.defaultLocale !== target.value ? `/${target.value}` : ''
     }`;
   };
 

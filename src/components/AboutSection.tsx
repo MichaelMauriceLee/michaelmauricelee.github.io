@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
-import { Card, Carousel } from 'flowbite-react';
+import { Carousel } from 'flowbite-react';
 import { useInView } from 'react-intersection-observer';
+import Card from './Card';
 
 const AboutSection = () => {
   const { t } = useTranslation();

@@ -1,0 +1,16 @@
+{
+  "about": "自分",
+  "errors": {
+    "invalidEmail": "Must be a valid email address",
+    "nameRequired": "名前は必要です",
+    "emailRequired": "Email is required",
+    "subjectRequired": "Subject is required",
+    "messageRequired": "Message is required"
+  },
+  "sections": {
+    "about": "自分",
+    "workExperience": "work-experience",
+    "sideProjects": "side-projects",
+    "contact": "連絡"
+  }
+}

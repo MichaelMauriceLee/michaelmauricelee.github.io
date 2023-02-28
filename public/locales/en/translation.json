@@ -1,0 +1,180 @@
+{
+  "about": "About",
+  "contact": "Contact",
+  "name": "Name",
+  "email": "Email",
+  "subject": "Subject",
+  "message": "Message",
+  "experience": "Work Experience",
+  "projects": "Side Projects",
+  "aboutMe": "About Me",
+  "submit": "Submit",
+  "description": "Michael Lee's Portfolio",
+  "softwareEngineer": "Software Engineer",
+  "flavourText": "I'm a software engineer specializing in full stack cloud-based web development using technologies such as React, Vue, TypeScript, Java, C# and Microsoft Azure. After deciding to switch careers from traditional engineering, I graduated with a Master of Engineering degree in Software Engineering from the University of Calgary in 2020 and have been working professionally as a web developer ever since with no regrets. I'm always looking to improve myself and interested in job opportunities which offer professional growth in the software industry.",
+  "webDevelopment": "Web Development",
+  "openApplication": "Open Application",
+  "viewCode": "View Code",
+  "sideProjects": [
+    {
+      "title": "Next-Gen Japanese-English Dictionary Web Application",
+      "codeUrl": "https://github.com/MichaelMauriceLee/chie",
+      "modalInfo": {
+        "imageUrl": "/images/projects/chie.jpg",
+        "description": "Full stack social media web application similar to meetup.com, built using ASP .NET Core, Microsoft SQL Server, and React and deployed using Microsoft Azure.  Users can create and search for events and other like-minded users.  In addition to its main functionality, users can leave comments on events and upload photos to their profile, as well as keep a list of followers."
+      },
+      "cardInfo": {
+        "imageUrl": "/images/projects/chie-sm.jpg",
+        "description": "Japanese-English dictionary with voice recognition, image recognition, and Anki Integration"
+      },
+      "webAppURL": "https://chie.vercel.app/"
+    },
+    {
+      "title": "Social Media Web Application",
+      "codeUrl": "https://github.com/MichaelMauriceLee/Connectivities",
+      "modalInfo": {
+        "imageUrl": "/images/projects/connectivities.jpg",
+        "description": "Full stack social media web application similar to meetup.com, built using ASP .NET Core, Microsoft SQL Server, and React and deployed using Microsoft Azure. Users can create and search for events and other like-minded users.  In addition to its main functionality, users can leave comments on events and upload photos to their profile, as well as keep a list of followers."
+      },
+      "cardInfo": {
+        "imageUrl": "/images/projects/connectivities-sm.jpg",
+        "description": "Social media application similar to meetup.com"
+      },
+      "webAppURL": "https://connectivities.azurewebsites.net"
+    },
+    {
+      "title": "TensorFlow Real Time Object Detection Program",
+      "codeUrl": "https://github.com/MichaelMauriceLee/FF14-Race-Identifer",
+      "modalInfo": {
+        "imageUrl": "/images/projects/ff14-race-identifer.jpg",
+        "description": "Real time object detection of races from the game Final Fantasy 14. The frozen inference model was created by using Tensorflow's Object Detection API and retraining Google's faster_rcnn_inception_v2_coco_2018_01_28 model to detect any images on the computer screen of any character from Final Fantasy 14 and display the information of the character's race and gender on screen."
+      },
+      "cardInfo": {
+        "imageUrl": "/images/projects/ff14-race-identifer-sm.jpg",
+        "description": "Real time object detection of races from the game Final Fantasy 14."
+      }
+    },
+    {
+      "title": "Tic-Tac-Toe",
+      "codeUrl": "https://github.com/MichaelMauriceLee/Tic-Tac-Toe",
+      "modalInfo": {
+        "imageUrl": "/images/projects/tic-tac-toe.jpg",
+        "description": "Tic-Tac-Toe game made in Java with AI players. The game runs in the terminal, asks for the names for the players, lets the human player choose the difficulty of the AI and then starts the game."
+      },
+      "cardInfo": {
+        "imageUrl": "/images/projects/tic-tac-toe-sm.jpg",
+        "description": "Tic-Tac-Toe game made in Java with AI players."
+      }
+    },
+    {
+      "title": "Student Registration App",
+      "codeUrl": "https://github.com/MichaelMauriceLee/Student-Registration-App",
+      "modalInfo": {
+        "imageUrl": "/images/projects/student-rep-app.jpg",
+        "description": "Student registration app for registering courses made in Java. The app runs in the terminal, asks for the user if they are one of the few registered students or the system admin, and then runs the app. Features a main menu with abilities such as adding and removing course offerings, looking up courses offered this semester, and check grades."
+      },
+      "cardInfo": {
+        "imageUrl": "/images/projects/student-rep-app-sm.jpg",
+        "description": "Student registration app for registering courses. Made in Java."
+      }
+    },
+    {
+      "title": "Inventory Management App",
+      "codeUrl": "https://github.com/MichaelMauriceLee/Inventory-Management-App",
+      "modalInfo": {
+        "imageUrl": "/images/projects/inventory-management.jpg",
+        "description": "Retail store inventory management app, made in Java. The app runs in the terminal. At startup, the app parses data from tools.txt and suppliers.txt (which at like databases) and creates a list of these items to be used in the app. Features a main menu with abilities such as checking tool stock, creating orders and writing the orders to orders.txt."
+      },
+      "cardInfo": {
+        "imageUrl": "/images/projects/inventory-management-sm.jpg",
+        "description": "Retail store inventory management app. Made in Java."
+      }
+    }
+  ],
+  "workExperience": [
+    {
+      "jobTitle": "Software Developer",
+      "company": "Morgan Stanley at Work",
+      "location": "Calgary",
+      "startDate": "May 2021",
+      "endDate": "Present",
+      "imageUrl": "/images/work-experience/morgan-stanley.jpg",
+      "imageAlt": "Morgan Stanley logo",
+      "notableAccomplishments": [
+        "Created new functionality to allow for trading of private company stock certificates between select users.",
+        "Led discussions around including new technologies such as Redux Toolkit and Vite into our new investor web application.",
+        "Assisted Cisco in migrating onto the web application by modifying data validation rules.",
+        "Created new workflow and scripts to periodically check phone number validity on hundreds of phone numbers that exist in the database."
+      ]
+    },
+    {
+      "jobTitle": "Software Developer",
+      "company": "Child Friendly Care",
+      "location": "Calgary",
+      "startDate": "May 2020",
+      "endDate": "May 2021",
+      "imageUrl": "/images/work-experience/cf.jpg",
+      "imageAlt": "Child Friendly Care logo",
+      "notableAccomplishments": [
+        "Designed and implemented payment processing",
+        "Created functionality to allow for the transfer of financial information data functionality between our web app and QuickBooks through REST API calls.",
+        "Setup and manage Azure CI/CD pipelines and test coverage for our various microservices."
+      ]
+    },
+    {
+      "jobTitle": "Intern, Facilities Engineering",
+      "company": "ATCO Gas Transmission",
+      "location": "Edmonton",
+      "startDate": "May 2017",
+      "endDate": "August 2018",
+      "imageUrl": "/images/work-experience/atco.jpg",
+      "imageAlt": "ATCO logo",
+      "notableAccomplishments": [
+        "Designed a brand-new meter station to replace an old meter station with an estimated budget of $350k.",
+        "Removed a meter station from project conception to land reclamation on budget ($200K) and on time.",
+        "Completed a tight deadline project (1 week) to check and ensure the accuracy of a job procedure for a $1 million project."
+      ]
+    },
+    {
+      "jobTitle": "Summer Student, Relief Operator",
+      "company": "Canadian Natural Resources Limited",
+      "location": "Lloydminster",
+      "startDate": "May 2016",
+      "endDate": "August 2016",
+      "imageUrl": "/images/work-experience/cnrl.jpg",
+      "imageAlt": "Canadian Natural Resources Limited logo",
+      "notableAccomplishments": [
+        "Operated 34 heavy oil wells in Marshall and Lone Rock oil fields within Lloydminster district.",
+        "Performed maintenance and production data entry.",
+        "Optimized heavy oil wells which included shooting fluid level and adjusting pump speeds.",
+        "Organized various well services and rig work when wells were down."
+      ]
+    },
+    {
+      "jobTitle": "Leader",
+      "company": "University of Calgary",
+      "location": "Calgary",
+      "startDate": "July 2015",
+      "endDate": "August 2015",
+      "imageUrl": "/images/work-experience/uofc.jpg",
+      "imageAlt": "University of Calgary logo",
+      "notableAccomplishments": [
+        "Supervised young attendees, prepared new activities and assisted camp instructors in teaching new skills."
+      ]
+    }
+  ],
+  "emailSuccessfullySent": "Email successfully sent!",
+  "errors": {
+    "invalidEmail": "Must be a valid email address",
+    "nameRequired": "Name is required",
+    "emailRequired": "Email is required",
+    "subjectRequired": "Subject is required",
+    "messageRequired": "Message is required"
+  },
+  "sections": {
+    "about": "about",
+    "workExperience": "work-experience",
+    "sideProjects": "side-projects",
+    "contact": "contact"
+  }
+}

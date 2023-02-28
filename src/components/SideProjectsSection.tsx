@@ -26,7 +26,7 @@ const SideProjectsSection = () => {
         <div className="text-2xl font-bold tracking-tight text-gray-900">
           {t('projects')}
         </div>
-        <div className="grid md:grid-cols-3 space-x-3 space-y-3">
+        <div className="grid md:grid-cols-3 gap-3 items-stretch">
           {sideProjects.map((sideProject) => (
             <Card
               imgSrc={sideProject.cardInfo.imageUrl}

@@ -21,7 +21,7 @@ const Card = ({ children, imgSrc, imgAlt, onClick, className }: Props) => {
       {imgSrc && (
         <img className="rounded-t-lg" alt={imgAlt ?? ''} src={imgSrc} />
       )}
-      <div className="flex h-full flex-col justify-center gap-4 p-6">
+      <div className="flex h-full flex-col gap-4 p-6">
         {children}
       </div>
     </div>

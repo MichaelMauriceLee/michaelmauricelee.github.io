@@ -54,42 +54,6 @@
         "imageUrl": "/images/projects/ff14-race-identifer-sm.jpg",
         "description": "Real time object detection of races from the game Final Fantasy 14."
       }
-    },
-    {
-      "title": "Tic-Tac-Toe",
-      "codeUrl": "https://github.com/MichaelMauriceLee/Tic-Tac-Toe",
-      "modalInfo": {
-        "imageUrl": "/images/projects/tic-tac-toe.jpg",
-        "description": "Tic-Tac-Toe game made in Java with AI players. The game runs in the terminal, asks for the names for the players, lets the human player choose the difficulty of the AI and then starts the game."
-      },
-      "cardInfo": {
-        "imageUrl": "/images/projects/tic-tac-toe-sm.jpg",
-        "description": "Tic-Tac-Toe game made in Java with AI players."
-      }
-    },
-    {
-      "title": "Student Registration App",
-      "codeUrl": "https://github.com/MichaelMauriceLee/Student-Registration-App",
-      "modalInfo": {
-        "imageUrl": "/images/projects/student-rep-app.jpg",
-        "description": "Student registration app for registering courses made in Java. The app runs in the terminal, asks for the user if they are one of the few registered students or the system admin, and then runs the app. Features a main menu with abilities such as adding and removing course offerings, looking up courses offered this semester, and check grades."
-      },
-      "cardInfo": {
-        "imageUrl": "/images/projects/student-rep-app-sm.jpg",
-        "description": "Student registration app for registering courses. Made in Java."
-      }
-    },
-    {
-      "title": "Inventory Management App",
-      "codeUrl": "https://github.com/MichaelMauriceLee/Inventory-Management-App",
-      "modalInfo": {
-        "imageUrl": "/images/projects/inventory-management.jpg",
-        "description": "Retail store inventory management app, made in Java. The app runs in the terminal. At startup, the app parses data from tools.txt and suppliers.txt (which at like databases) and creates a list of these items to be used in the app. Features a main menu with abilities such as checking tool stock, creating orders and writing the orders to orders.txt."
-      },
-      "cardInfo": {
-        "imageUrl": "/images/projects/inventory-management-sm.jpg",
-        "description": "Retail store inventory management app. Made in Java."
-      }
     }
   ],
   "workExperience": [

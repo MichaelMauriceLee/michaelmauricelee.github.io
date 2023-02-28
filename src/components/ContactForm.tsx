@@ -83,11 +83,13 @@ const ContactForm = () => {
         <div className="text-2xl font-bold tracking-tight text-gray-900">
           {t('contact')}
         </div>
+
         {showAlert && (
           <Alert color={severity} onDismiss={() => setShowAlert(false)}>
             <span className="font-medium">{message}</span>
           </Alert>
         )}
+
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="flex flex-col">
             <label htmlFor="name">{t('name')}</label>
@@ -97,7 +99,9 @@ const ContactForm = () => {
               {...register('name')}
               disabled={isSubmitting}
             />
-            {errors.name?.message && <p>{errors.name?.message}</p>}
+            {errors.name?.message && (
+              <p className="text-red-500">{errors.name?.message}</p>
+            )}
 
             <label className="mt-2" htmlFor="email">
               {t('email')}
@@ -108,7 +112,9 @@ const ContactForm = () => {
               {...register('email')}
               disabled={isSubmitting}
             />
-            {errors.email?.message && <p>{errors.email?.message}</p>}
+            {errors.email?.message && (
+              <p className="text-red-500">{errors.email?.message}</p>
+            )}
 
             <label className="mt-2" htmlFor="subject">
               {t('subject')}
@@ -119,7 +125,9 @@ const ContactForm = () => {
               {...register('subject')}
               disabled={isSubmitting}
             />
-            {errors.subject?.message && <p>{errors.subject?.message}</p>}
+            {errors.subject?.message && (
+              <p className="text-red-500">{errors.subject?.message}</p>
+            )}
 
             <label className="mt-2" htmlFor="message">
               {t('message')}
@@ -130,7 +138,9 @@ const ContactForm = () => {
               disabled={isSubmitting}
               rows={10}
             />
-            {errors.message?.message && <p>{errors.message?.message}</p>}
+            {errors.message?.message && (
+              <p className="text-red-500">{errors.message?.message}</p>
+            )}
           </div>
           <Button
             className="mt-4"
@@ -139,7 +149,7 @@ const ContactForm = () => {
           >
             {isSubmitting ? (
               <div className="mr-3">
-                <Spinner size="sm" light={true} />
+                <Spinner size="sm" light />
               </div>
             ) : (
               t('submit')

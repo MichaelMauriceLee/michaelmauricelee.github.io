@@ -22,7 +22,7 @@ const AboutSection = () => {
           {t('aboutMe')}
         </div>
         <p>{t('flavourText')}</p>
-        <Carousel className="h-56 sm:h-64 xl:h-80 2xl:h-96 bg-slate-500 p-2 rounded text-white">
+        <Carousel className="h-56 sm:h-64 xl:h-80 2xl:h-96 p-2 rounded text-white">
           <div className="flex h-full items-center justify-center space-x-4">
             <div className="flex flex-col items-center">
               <img src="/images/programming/react.jpg" alt="React icon" />

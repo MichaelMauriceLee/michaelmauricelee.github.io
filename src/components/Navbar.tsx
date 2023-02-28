@@ -14,15 +14,15 @@ import i18next from 'i18next';
 import i18nextConfig from '../../astro-i18next.config.mjs';
 import classNames from 'classnames';
 
-const Header = () => {
+const Navbar = () => {
   const { t } = useTranslation();
-  const headerRef = useRef<HTMLDivElement>(null);
+  const navbarRef = useRef<HTMLDivElement>(null);
   const $offset = useStore(offset);
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    headerRef.current && offset.set(-headerRef.current.clientHeight);
-  }, [headerRef]);
+    navbarRef.current && offset.set(-navbarRef.current.clientHeight);
+  }, [navbarRef]);
 
   const handleLogoClick = () => {
     setIsOpen(false);
@@ -30,7 +30,7 @@ const Header = () => {
   };
 
   return (
-    <div id="header" ref={headerRef} className="fixed w-full top-0 left-0 z-20">
+    <div id="header" ref={navbarRef} className="fixed w-full top-0 left-0 z-20">
       <nav className="border-gray-200 py-2.5 bg-white border">
         <div className="mx-6 flex flex-wrap items-center justify-between">
           <img
@@ -163,4 +163,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navbar;

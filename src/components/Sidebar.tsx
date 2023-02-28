@@ -1,6 +1,6 @@
 import { FilePdfFilled, GithubFilled, LinkedinFilled } from '@ant-design/icons';
 
-const ExternalLinks = () => (
+const Sidebar = () => (
   <div className="fixed w-fit left-0 top-1/2 hidden md:block -translate-y-1/2 ml-6">
     <div className="flex flex-col bg-white rounded p-2">
       <a
@@ -25,4 +25,4 @@ const ExternalLinks = () => (
   </div>
 );
 
-export default ExternalLinks;
+export default Sidebar;

@@ -12,7 +12,7 @@ const TitleCard = () => {
   return (
     <div
       id="title-card"
-      className={`absolute left-1/2 top-1/2 text-white -translate-x-1/2 -translate-y-1/2 motion-safe:transition-all motion-safe:duration-700 backdrop-blur-lg ${
+      className={`absolute text-white left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 motion-safe:transition-all motion-safe:duration-700 border-2 rounded-lg backdrop-blur-3xl hover:text-blue-700 hover:border-blue-700 hover:bg-white ${
         inView
           ? 'opacity-1 blur-0'
           : 'motion-safe:opacity-0 motion-safe:blur-sm motion-safe:translate-y-full'
@@ -20,7 +20,6 @@ const TitleCard = () => {
       ref={ref}
     >
       <Link
-        activeClass="text-red-500"
         to={t('sections.about')}
         href={`#${t('sections.about')}`}
         spy
@@ -30,7 +29,7 @@ const TitleCard = () => {
         duration={500}
         offset={$offset}
       >
-        <div className="text-white w-full m-auto border-2 rounded-lg px-4 md:p-10 backdrop-blur-lg hover:text-blue-500 hover:border-blue-500">
+        <div className=" w-full m-auto px-4 md:p-10">
           <div className="text-left text-l md:text-xl">
             {t('softwareEngineer')}
           </div>

@@ -39,7 +39,7 @@ const Navbar = () => {
                 ? '../images/logo.png'
                 : 'images/logo.png'
             }
-            className="mr-3 h-6 sm:h-9 cursor-pointer hover:border hover:border-blue-400 rounded"
+            className="mr-3 h-6 sm:h-9 cursor-pointer hover:outline hover:outline-2 hover:outline-blue-400 rounded"
             onClick={handleLogoClick}
             alt="Michael Lee's Logo"
           />

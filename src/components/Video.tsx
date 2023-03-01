@@ -4,7 +4,7 @@ import i18nextConfig from '../../astro-i18next.config.mjs';
 const Video = () => {
   return (
     <video
-      className="absolute top-0 w-full h-full object-cover -z-10"
+      className="absolute top-0 w-full h-full object-cover -z-10 blur-sm"
       id="title-card"
       loop
       autoPlay

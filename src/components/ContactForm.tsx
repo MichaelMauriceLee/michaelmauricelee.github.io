@@ -13,8 +13,8 @@ const FormValues = z.object({
   name: z.string().min(1, i18next.t('errors.nameRequired') ?? ''),
   email: z
     .string()
-    .min(1, i18next.t('errors.emailRequired') ?? '')
-    .email(i18next.t('errors.invalidEmail') ?? ''),
+    .email(i18next.t('errors.invalidEmail') ?? '')
+    .min(1, i18next.t('errors.emailRequired') ?? ''),
   subject: z.string().min(1, i18next.t('errors.subjectRequired') ?? ''),
   message: z.string().min(1, i18next.t('errors.messageRequired') ?? ''),
 });

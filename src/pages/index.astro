@@ -1,17 +1,17 @@
 ---
-import i18next, { changeLanguage, t } from "i18next";
-import { HeadHrefLangs } from "astro-i18next/components";
-import AboutSection from "../components/AboutSection";
-import WorkExperienceSection from "../components/WorkExperienceSection";
-import SideProjectsSection from "../components/SideProjectsSection";
-import ContactForm from "../components/ContactForm";
-import TitleCard from "../components/TitleCard";
-import Sidebar from "../components/Sidebar";
-import Navbar from "../components/Navbar";
-import Video from "../components/Video";
-import Modal from "../components/Modal";
+import i18next, { changeLanguage, t } from 'i18next';
+import { HeadHrefLangs } from 'astro-i18next/components';
+import AboutSection from '../components/AboutSection';
+import WorkExperienceSection from '../components/WorkExperienceSection';
+import SideProjectsSection from '../components/SideProjectsSection';
+import ContactForm from '../components/ContactForm';
+import TitleCard from '../components/TitleCard';
+import Sidebar from '../components/Sidebar';
+import Navbar from '../components/Navbar';
+import Video from '../components/Video';
+import Modal from '../components/Modal';
 
-changeLanguage("en");
+changeLanguage('en');
 ---
 
 <html lang={i18next.language}>
@@ -24,7 +24,9 @@ changeLanguage("en");
     <title>Michael Lee</title>
     <HeadHrefLangs />
   </head>
-  <body>
+  <body
+    class="scrollbar-thin scrollbar-thumb-blue-400 hover:scrollbar-thumb-blue-700 scrollbar-track-white scrollbar-thumb-rounded-full scrollbar-track-rounded-full"
+  >
     <main>
       <Modal client:only />
       <Navbar client:load />

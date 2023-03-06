@@ -10,6 +10,7 @@ import Sidebar from "../../components/Sidebar";
 import Navbar from "../../components/Navbar";
 import Video from "../../components/Video";
 import Modal from "../../components/Modal";
+import EducationSection from "../../components/EducationSection";
 
 changeLanguage("ja");
 ---
@@ -24,7 +25,9 @@ changeLanguage("ja");
     <title>Michael Lee</title>
     <HeadHrefLangs />
   </head>
-  <body>
+  <body
+    class="scrollbar-thin scrollbar-thumb-blue-400 hover:scrollbar-thumb-blue-700 scrollbar-track-white scrollbar-thumb-rounded-full scrollbar-track-rounded-full"
+  >
     <main>
       <Modal client:only />
       <Navbar client:load />
@@ -36,6 +39,7 @@ changeLanguage("ja");
       <div class="px-4 md:px-72 bg-slate-500 pt-5 pb-[60vh]">
         <AboutSection client:visible />
         <WorkExperienceSection client:visible />
+        <EducationSection client:visible />
         <SideProjectsSection client:visible />
         <ContactForm client:visible />
       </div>

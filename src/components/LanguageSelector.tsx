@@ -17,12 +17,19 @@ const LanguageSelector = () => {
   };
 
   return (
-    <select onChange={handleLocationChange} value={currentLanguage}>
+    <select
+      onChange={handleLocationChange}
+      value={currentLanguage}
+      className="hover:cursor-pointer"
+    >
       {supportedLanguages.map((supportedLanguage: string) => {
         const nativeName = ISO6991.getNativeName(supportedLanguage);
 
         return (
-          <option value={supportedLanguage} key={supportedLanguage}>
+          <option
+            value={supportedLanguage}
+            key={supportedLanguage}
+          >
             {nativeName}
           </option>
         );

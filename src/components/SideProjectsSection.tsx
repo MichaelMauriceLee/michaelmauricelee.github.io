@@ -32,7 +32,7 @@ const SideProjectsSection = () => {
               imgSrc={sideProject.cardInfo.imageUrl}
               key={sideProject.title}
               onClick={() => selectedSideProject.set(sideProject)}
-              className="cursor-pointer"
+              className="cursor-pointer hover:outline hover:outline-blue-400"
             >
               <div className="text-2xl font-bold tracking-tight text-gray-900">
                 {sideProject.title}

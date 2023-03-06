@@ -101,6 +101,23 @@ const Navbar = () => {
                 <Link
                   activeClass="text-blue-700"
                   className="hover:text-blue-400"
+                  to={t('sections.education')}
+                  href={`#${t('sections.education')}`}
+                  spy
+                  hashSpy
+                  smooth
+                  duration={500}
+                  offset={$offset}
+                  isDynamic
+                  onClick={() => setIsOpen(false)}
+                >
+                  {t('education')}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  activeClass="text-blue-700"
+                  className="hover:text-blue-400"
                   to={t('sections.sideProjects')}
                   href={`#${t('sections.sideProjects')}`}
                   spy

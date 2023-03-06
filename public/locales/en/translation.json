@@ -6,6 +6,7 @@
   "subject": "Subject",
   "message": "Message",
   "experience": "Work Experience",
+  "education": "Education",
   "projects": "Side Projects",
   "aboutMe": "About Me",
   "submit": "Submit",
@@ -128,6 +129,22 @@
       ]
     }
   ],
+  "educationItems": [
+    {
+      "dateRange": "September 2019 - August 2020",
+      "title": "MEng, Software Engineering",
+      "institution": "University of Calgary, Schulich School of Engineering",
+      "location": "Calgary, Alberta",
+      "accomplishment": "3.97/4.0 GPA"
+    },
+    {
+      "dateRange": "September 2014 - April 2019",
+      "title": "BSc, Chemical Engineering with minor in Petroleum Engineering",
+      "institution": "University of Calgary, Schulich School of Engineering",
+      "location": "Calgary, Alberta",
+      "accomplishment": "Graduated with Distinction; 3.78/4.0 GPA"
+    }
+  ],
   "emailSuccessfullySent": "Email successfully sent!",
   "errors": {
     "invalidEmail": "Must be a valid email address",
@@ -140,6 +157,7 @@
     "about": "about",
     "workExperience": "work-experience",
     "sideProjects": "side-projects",
-    "contact": "contact"
+    "contact": "contact",
+    "education": "education"
   }
 }

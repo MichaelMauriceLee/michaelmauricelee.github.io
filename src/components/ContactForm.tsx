@@ -44,6 +44,7 @@ const ContactForm = () => {
     reset,
     formState: { errors, isDirty, isSubmitting },
   } = useForm<FormValues>({
+    mode: 'onTouched',
     resolver: zodResolver(FormValues),
   });
 
@@ -142,11 +143,7 @@ const ContactForm = () => {
               <p className="text-red-500">{errors.message?.message}</p>
             )}
           </div>
-          <Button
-            className="mt-4"
-            type="submit"
-            disabled={!isDirty || isSubmitting}
-          >
+          <Button className="mt-4" type="submit" disabled={isSubmitting}>
             {isSubmitting ? (
               <div className="mr-3">
                 <Spinner size="sm" light />

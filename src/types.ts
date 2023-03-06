@@ -22,3 +22,11 @@ export type WorkExperience = {
   endDate: string;
   notableAccomplishments: string[];
 };
+
+export type EducationItem = {
+  dateRange: string;
+  title: string;
+  institution: string;
+  location: string;
+  accomplishment: string;
+};

@@ -1,16 +1,163 @@
 {
-  "about": "自分",
+  "about": "About",
+  "contact": "Contact",
+  "name": "Name",
+  "email": "Email",
+  "subject": "Subject",
+  "message": "Message",
+  "experience": "Work Experience",
+  "education": "Education",
+  "projects": "Side Projects",
+  "aboutMe": "About Me",
+  "submit": "Submit",
+  "description": "Michael Lee's Portfolio",
+  "softwareEngineer": "Software Engineer",
+  "flavourText": "I'm a software engineer specializing in full stack cloud-based web development using technologies such as React, Vue, TypeScript, Java, C# and Microsoft Azure. After deciding to switch careers from traditional engineering, I graduated with a Master of Engineering degree in Software Engineering from the University of Calgary in 2020 and have been working professionally as a web developer ever since with no regrets. I'm always looking to improve myself and interested in job opportunities which offer professional growth in the software industry.",
+  "webDevelopment": "Web Development",
+  "openApplication": "Open Application",
+  "viewCode": "View Code",
+  "openMainMenu": "Open main menu",
+  "sideProjects": [
+    {
+      "title": "Next-Gen Japanese-English Dictionary Web Application",
+      "codeUrl": "https://github.com/MichaelMauriceLee/chie",
+      "modalInfo": {
+        "imageUrl": "/images/projects/chie.jpg",
+        "description": "Full stack social media web application similar to meetup.com, built using ASP .NET Core, Microsoft SQL Server, and React and deployed using Microsoft Azure.  Users can create and search for events and other like-minded users.  In addition to its main functionality, users can leave comments on events and upload photos to their profile, as well as keep a list of followers."
+      },
+      "cardInfo": {
+        "imageUrl": "/images/projects/chie-sm.jpg",
+        "description": "Japanese-English dictionary with voice recognition, image recognition, and Anki Integration"
+      },
+      "webAppURL": "https://chie.vercel.app/"
+    },
+    {
+      "title": "Social Media Web Application",
+      "codeUrl": "https://github.com/MichaelMauriceLee/Connectivities",
+      "modalInfo": {
+        "imageUrl": "/images/projects/connectivities.jpg",
+        "description": "Full stack social media web application similar to meetup.com, built using ASP .NET Core, Microsoft SQL Server, and React and deployed using Microsoft Azure. Users can create and search for events and other like-minded users.  In addition to its main functionality, users can leave comments on events and upload photos to their profile, as well as keep a list of followers."
+      },
+      "cardInfo": {
+        "imageUrl": "/images/projects/connectivities-sm.jpg",
+        "description": "Social media application similar to meetup.com"
+      },
+      "webAppURL": "https://connectivities.azurewebsites.net"
+    },
+    {
+      "title": "TensorFlow Real Time Object Detection Program",
+      "codeUrl": "https://github.com/MichaelMauriceLee/FF14-Race-Identifer",
+      "modalInfo": {
+        "imageUrl": "/images/projects/ff14-race-identifer.jpg",
+        "description": "Real time object detection of races from the game Final Fantasy 14. The frozen inference model was created by using Tensorflow's Object Detection API and retraining Google's faster_rcnn_inception_v2_coco_2018_01_28 model to detect any images on the computer screen of any character from Final Fantasy 14 and display the information of the character's race and gender on screen."
+      },
+      "cardInfo": {
+        "imageUrl": "/images/projects/ff14-race-identifer-sm.jpg",
+        "description": "Real time object detection of races from the game Final Fantasy 14."
+      }
+    }
+  ],
+  "workExperience": [
+    {
+      "jobTitle": "Software Developer",
+      "company": "Morgan Stanley",
+      "location": "Calgary",
+      "startDate": "May 2021",
+      "endDate": "Present",
+      "imageUrl": "/images/work-experience/morgan-stanley.jpg",
+      "imageAlt": "Morgan Stanley logo",
+      "notableAccomplishments": [
+        "Led creation of our new React investor web application frontend with up-to-date coding standards such as using React hooks and including new technologies such as RTK Query, React Hook Form, and Zod.",
+        "Created new functionality to allow for trading of private company stock certificates between select users with React, Spring Boot, GWT, and Oracle SQL.",
+        "Assisted Cisco and their more than 71,00 employees in migrating onto the web application by allowing their data to be imported via modifying data validation rules.",
+        "Preemptively fixed issues with multi-factor authentication for more than 200 users with invalid phone numbers by creating a new workflow and scripts to periodically check phone number validity and warn users to change their phone number if their phone number becomes invalid."
+      ]
+    },
+    {
+      "jobTitle": "Software Developer",
+      "company": "Child Friendly Care",
+      "location": "Calgary",
+      "startDate": "May 2020",
+      "endDate": "May 2021",
+      "imageUrl": "/images/work-experience/cf.jpg",
+      "imageAlt": "Child Friendly Care logo",
+      "notableAccomplishments": [
+        "Designed and implemented payment processing using serverless Azure Functions, Azure Cosmos DB, and Rotessa.",
+        "Created functionality to allow for the transfer of financial information data between our web app and QuickBooks through REST API calls.",
+        "Setup and manage Azure CI/CD pipelines and testing architecture for our various microservices."
+      ]
+    },
+    {
+      "jobTitle": "Intern, Facilities Engineering",
+      "company": "ATCO Gas Transmission",
+      "location": "Edmonton",
+      "startDate": "May 2017",
+      "endDate": "August 2018",
+      "imageUrl": "/images/work-experience/atco.jpg",
+      "imageAlt": "ATCO logo",
+      "notableAccomplishments": [
+        "Designed a brand-new meter station to replace an old meter station with an estimated budget of $350k.",
+        "Removed a meter station from project conception to land reclamation on budget ($200K) and on time.",
+        "Completed a tight deadline project (1 week) to check and ensure the accuracy of a job procedure for a $1 million project."
+      ]
+    },
+    {
+      "jobTitle": "Summer Student, Relief Operator",
+      "company": "Canadian Natural Resources Limited",
+      "location": "Lloydminster",
+      "startDate": "May 2016",
+      "endDate": "August 2016",
+      "imageUrl": "/images/work-experience/cnrl.jpg",
+      "imageAlt": "Canadian Natural Resources Limited logo",
+      "notableAccomplishments": [
+        "Operated 34 heavy oil wells in Marshall and Lone Rock oil fields within Lloydminster district.",
+        "Performed maintenance and production data entry.",
+        "Optimized heavy oil wells which included shooting fluid level and adjusting pump speeds.",
+        "Organized various well services and rig work when wells were down."
+      ]
+    },
+    {
+      "jobTitle": "Leader",
+      "company": "University of Calgary",
+      "location": "Calgary",
+      "startDate": "July 2015",
+      "endDate": "August 2015",
+      "imageUrl": "/images/work-experience/uofc.jpg",
+      "imageAlt": "University of Calgary logo",
+      "notableAccomplishments": [
+        "Supervised young attendees, prepared new activities and assisted camp instructors in teaching new skills."
+      ]
+    }
+  ],
+  "educationItems": [
+    {
+      "dateRange": "September 2019 - August 2020",
+      "title": "MEng, Software Engineering",
+      "institution": "University of Calgary, Schulich School of Engineering",
+      "location": "Calgary, Alberta",
+      "accomplishment": "3.97/4.0 GPA"
+    },
+    {
+      "dateRange": "September 2014 - April 2019",
+      "title": "BSc, Chemical Engineering with minor in Petroleum Engineering",
+      "institution": "University of Calgary, Schulich School of Engineering",
+      "location": "Calgary, Alberta",
+      "accomplishment": "Graduated with Distinction; 3.78/4.0 GPA"
+    }
+  ],
+  "emailSuccessfullySent": "Email successfully sent!",
   "errors": {
     "invalidEmail": "Must be a valid email address",
-    "nameRequired": "名前は必要です",
+    "nameRequired": "Name is required",
     "emailRequired": "Email is required",
     "subjectRequired": "Subject is required",
     "messageRequired": "Message is required"
   },
   "sections": {
-    "about": "自分",
+    "about": "about",
     "workExperience": "work-experience",
     "sideProjects": "side-projects",
-    "contact": "連絡"
+    "contact": "contact",
+    "education": "education"
   }
 }

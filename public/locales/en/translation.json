@@ -60,17 +60,17 @@
   "workExperience": [
     {
       "jobTitle": "Software Developer",
-      "company": "Morgan Stanley at Work",
+      "company": "Morgan Stanley",
       "location": "Calgary",
       "startDate": "May 2021",
       "endDate": "Present",
       "imageUrl": "/images/work-experience/morgan-stanley.jpg",
       "imageAlt": "Morgan Stanley logo",
       "notableAccomplishments": [
-        "Created new functionality to allow for trading of private company stock certificates between select users.",
-        "Led discussions around including new technologies such as Redux Toolkit and Vite into our new investor web application.",
-        "Assisted Cisco in migrating onto the web application by modifying data validation rules.",
-        "Created new workflow and scripts to periodically check phone number validity on hundreds of phone numbers that exist in the database."
+        "Led creation of our new React investor web application frontend with up-to-date coding standards such as using React hooks and including new technologies such as RTK Query, React Hook Form, and Zod.",
+        "Created new functionality to allow for trading of private company stock certificates between select users with React, Spring Boot, GWT, and Oracle SQL.",
+        "Assisted Cisco and their more than 71,00 employees in migrating onto the web application by allowing their data to be imported via modifying data validation rules.",
+        "Preemptively fixed issues with multi-factor authentication for more than 200 users with invalid phone numbers by creating a new workflow and scripts to periodically check phone number validity and warn users to change their phone number if their phone number becomes invalid."
       ]
     },
     {
@@ -82,9 +82,9 @@
       "imageUrl": "/images/work-experience/cf.jpg",
       "imageAlt": "Child Friendly Care logo",
       "notableAccomplishments": [
-        "Designed and implemented payment processing",
-        "Created functionality to allow for the transfer of financial information data functionality between our web app and QuickBooks through REST API calls.",
-        "Setup and manage Azure CI/CD pipelines and test coverage for our various microservices."
+        "Designed and implemented payment processing using serverless Azure Functions, Azure Cosmos DB, and Rotessa.",
+        "Created functionality to allow for the transfer of financial information data between our web app and QuickBooks through REST API calls.",
+        "Setup and manage Azure CI/CD pipelines and testing architecture for our various microservices."
       ]
     },
     {

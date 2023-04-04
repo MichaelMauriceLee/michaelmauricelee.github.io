@@ -29,7 +29,7 @@ const WorkExperienceSection = () => {
           {workExperienceItems.map((workExperienceItem) => (
             <div
               className="flex flex-col md:flex-row mb-3"
-              key={`${workExperienceItem.startDate} - ${workExperienceItem.endDate}`}
+              key={workExperienceItem.dateRange}
             >
               <img
                 src={workExperienceItem.imageUrl}
@@ -43,7 +43,7 @@ const WorkExperienceSection = () => {
                   {workExperienceItem.jobTitle}
                 </div>
                 <div className="text-gray-500">
-                  {workExperienceItem.startDate} - {workExperienceItem.endDate}
+                  {workExperienceItem.dateRange}
                 </div>
                 <div className="text-gray-500">
                   {workExperienceItem.location}

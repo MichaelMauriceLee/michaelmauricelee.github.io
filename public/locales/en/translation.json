@@ -1,4 +1,5 @@
 {
+  "michaelLee": "Michael Lee",
   "about": "About",
   "contact": "Contact",
   "name": "Name",
@@ -62,7 +63,7 @@
       "jobTitle": "Software Developer",
       "company": "Morgan Stanley",
       "location": "Calgary",
-      "startDate": "May 2021",
+      "dateRange": "May 2021 - Present",
       "endDate": "Present",
       "imageUrl": "/images/work-experience/morgan-stanley.jpg",
       "imageAlt": "Morgan Stanley logo",
@@ -77,13 +78,12 @@
       "jobTitle": "Software Developer",
       "company": "Child Friendly Care",
       "location": "Calgary",
-      "startDate": "May 2020",
-      "endDate": "May 2021",
+      "dateRange": "May 2020 - May 2021",
       "imageUrl": "/images/work-experience/cf.jpg",
       "imageAlt": "Child Friendly Care logo",
       "notableAccomplishments": [
         "Designed and implemented payment processing using serverless Azure Functions, Azure Cosmos DB, and Rotessa.",
-        "Created functionality to allow for the transfer of financial information data between our web app and QuickBooks through REST API calls.",
+        "Created functionality to allow for the transfer of financial information between our web app and QuickBooks through REST API calls.",
         "Setup and manage Azure CI/CD pipelines and testing architecture for our various microservices."
       ]
     },
@@ -91,12 +91,11 @@
       "jobTitle": "Intern, Facilities Engineering",
       "company": "ATCO Gas Transmission",
       "location": "Edmonton",
-      "startDate": "May 2017",
-      "endDate": "August 2018",
+      "dateRange": "May 2017 - August 2018",
       "imageUrl": "/images/work-experience/atco.jpg",
       "imageAlt": "ATCO logo",
       "notableAccomplishments": [
-        "Designed a brand-new meter station to replace an old meter station with an estimated budget of $350k.",
+        "Designed a brand-new meter station to replace an old meter station with an estimated budget of $350K.",
         "Removed a meter station from project conception to land reclamation on budget ($200K) and on time.",
         "Completed a tight deadline project (1 week) to check and ensure the accuracy of a job procedure for a $1 million project."
       ]
@@ -105,8 +104,7 @@
       "jobTitle": "Summer Student, Relief Operator",
       "company": "Canadian Natural Resources Limited",
       "location": "Lloydminster",
-      "startDate": "May 2016",
-      "endDate": "August 2016",
+      "dateRange": "May 2016 - August 2016",
       "imageUrl": "/images/work-experience/cnrl.jpg",
       "imageAlt": "Canadian Natural Resources Limited logo",
       "notableAccomplishments": [
@@ -120,8 +118,7 @@
       "jobTitle": "Leader",
       "company": "University of Calgary",
       "location": "Calgary",
-      "startDate": "July 2015",
-      "endDate": "August 2015",
+      "dateRange": "July 2015 - August 2015",
       "imageUrl": "/images/work-experience/uofc.jpg",
       "imageAlt": "University of Calgary logo",
       "notableAccomplishments": [

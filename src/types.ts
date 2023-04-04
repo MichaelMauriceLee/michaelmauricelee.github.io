@@ -18,8 +18,7 @@ export type WorkExperience = {
   imageAlt: string;
   company: string;
   location: string;
-  startDate: string;
-  endDate: string;
+  dateRange: string;
   notableAccomplishments: string[];
 };
 

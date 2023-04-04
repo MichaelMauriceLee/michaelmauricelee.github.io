@@ -1,163 +1,159 @@
 {
-  "about": "About",
-  "contact": "Contact",
-  "name": "Name",
-  "email": "Email",
-  "subject": "Subject",
-  "message": "Message",
-  "experience": "Work Experience",
-  "education": "Education",
-  "projects": "Side Projects",
-  "aboutMe": "About Me",
-  "submit": "Submit",
-  "description": "Michael Lee's Portfolio",
-  "softwareEngineer": "Software Engineer",
-  "flavourText": "I'm a software engineer specializing in full stack cloud-based web development using technologies such as React, Vue, TypeScript, Java, C# and Microsoft Azure. After deciding to switch careers from traditional engineering, I graduated with a Master of Engineering degree in Software Engineering from the University of Calgary in 2020 and have been working professionally as a web developer ever since with no regrets. I'm always looking to improve myself and interested in job opportunities which offer professional growth in the software industry.",
-  "webDevelopment": "Web Development",
-  "openApplication": "Open Application",
-  "viewCode": "View Code",
-  "openMainMenu": "Open main menu",
+  "michaelLee": "マイケル・リー",
+  "about": "自分について",
+  "contact": "お問い合わせ",
+  "name": "名前",
+  "email": "メールアドレス",
+  "subject": "主語",
+  "message": "メッセージ",
+  "experience": "実務経験",
+  "education": "教育",
+  "projects": "サイドプロジェクト",
+  "aboutMe": "自分について",
+  "submit": "投入",
+  "description": "マイケル・リーのポートフォリオ",
+  "softwareEngineer": "ソフトウェアメーカー",
+  "flavourText": "私は、React、Vue、TypeScript、Java、C#、Microsoft Azure などのテクノロジを使用したフルスタックのクラウドベースの Web 開発を専門とするソフトウェア エンジニアです。従来のエンジニアリングからキャリアを変えることを決めた後、私は 2020 年にカルガリー大学でソフトウェア エンジニアリングの工学修士号を取得して卒業し、それ以来、後悔することなく Web 開発者として専門的に働いています。私は常に自分自身を改善することを目指しており、ソフトウェア業界で専門的な成長をもたらす仕事の機会に興味を持っています.",
+  "webDevelopment": "Webプログラミング",
+  "openApplication": "アプリを開く",
+  "viewCode": "コードを見る",
+  "openMainMenu": "メニューを開く",
   "sideProjects": [
     {
-      "title": "Next-Gen Japanese-English Dictionary Web Application",
+      "title": "次世代和英辞書Webアプリ",
       "codeUrl": "https://github.com/MichaelMauriceLee/chie",
       "modalInfo": {
         "imageUrl": "/images/projects/chie.jpg",
-        "description": "Full stack social media web application similar to meetup.com, built using ASP .NET Core, Microsoft SQL Server, and React and deployed using Microsoft Azure.  Users can create and search for events and other like-minded users.  In addition to its main functionality, users can leave comments on events and upload photos to their profile, as well as keep a list of followers."
+        "description": "ASP .NET Core、Microsoft SQL Server、および React を使用して構築され、Microsoft Azure を使用して展開される、meetup.com に似たフル スタックのソーシャル メディア Web アプリケーション。ユーザーは、イベントや他の志を同じくするユーザーを作成および検索できます。主な機能に加えて、ユーザーはイベントにコメントを残したり、プロフィールに写真をアップロードしたり、フォロワーのリストを保持したりできます。"
       },
       "cardInfo": {
         "imageUrl": "/images/projects/chie-sm.jpg",
-        "description": "Japanese-English dictionary with voice recognition, image recognition, and Anki Integration"
+        "description": "音声認識、画像認識、Anki連携による和英辞書"
       },
       "webAppURL": "https://chie.vercel.app/"
     },
     {
-      "title": "Social Media Web Application",
+      "title": "ソーシャル メディア Web アプリケーション",
       "codeUrl": "https://github.com/MichaelMauriceLee/Connectivities",
       "modalInfo": {
         "imageUrl": "/images/projects/connectivities.jpg",
-        "description": "Full stack social media web application similar to meetup.com, built using ASP .NET Core, Microsoft SQL Server, and React and deployed using Microsoft Azure. Users can create and search for events and other like-minded users.  In addition to its main functionality, users can leave comments on events and upload photos to their profile, as well as keep a list of followers."
+        "description": "ASP .NET Core、Microsoft SQL Server、および React を使用して構築され、Microsoft Azure を使用して展開される、meetup.com に似たフル スタックのソーシャル メディア Web アプリケーション。ユーザーは、イベントや他の志を同じくするユーザーを作成および検索できます。主な機能に加えて、ユーザーはイベントにコメントを残したり、プロフィールに写真をアップロードしたり、フォロワーのリストを保持したりできます."
       },
       "cardInfo": {
         "imageUrl": "/images/projects/connectivities-sm.jpg",
-        "description": "Social media application similar to meetup.com"
+        "description": "meetup.com に似たソーシャル メディア アプリケーション"
       },
       "webAppURL": "https://connectivities.azurewebsites.net"
     },
     {
-      "title": "TensorFlow Real Time Object Detection Program",
+      "title": "TensorFlow リアルタイム オブジェクト検出プログラム",
       "codeUrl": "https://github.com/MichaelMauriceLee/FF14-Race-Identifer",
       "modalInfo": {
         "imageUrl": "/images/projects/ff14-race-identifer.jpg",
-        "description": "Real time object detection of races from the game Final Fantasy 14. The frozen inference model was created by using Tensorflow's Object Detection API and retraining Google's faster_rcnn_inception_v2_coco_2018_01_28 model to detect any images on the computer screen of any character from Final Fantasy 14 and display the information of the character's race and gender on screen."
+        "description": "ゲーム ファイナル ファンタジー 14 からのレースのリアルタイム オブジェクト検出。凍結された推論モデルは、Tensorflow のオブジェクト検出 API を使用し、Google のfaster_rcnn_inception_v2_coco_2018_01_28 モデルを再トレーニングして作成され、ファイナル ファンタジー 14 の任意のキャラクターのコンピューター画面上の画像を検出し、その情報を表示します。画面上のキャラクターの人種と性別。"
       },
       "cardInfo": {
         "imageUrl": "/images/projects/ff14-race-identifer-sm.jpg",
-        "description": "Real time object detection of races from the game Final Fantasy 14."
+        "description": "ゲーム Final Fantasy 14 からのレースのリアルタイム オブジェクト検出。"
       }
     }
   ],
   "workExperience": [
     {
-      "jobTitle": "Software Developer",
-      "company": "Morgan Stanley",
-      "location": "Calgary",
-      "startDate": "May 2021",
-      "endDate": "Present",
+      "jobTitle": "ソフトウェアメーカー",
+      "company": "モルガン・スタンレー",
+      "location": "カルガリー",
+      "dateRange": "2021年5月～現在",
       "imageUrl": "/images/work-experience/morgan-stanley.jpg",
-      "imageAlt": "Morgan Stanley logo",
+      "imageAlt": "モルガン・スタンレーのロゴ",
       "notableAccomplishments": [
-        "Led creation of our new React investor web application frontend with up-to-date coding standards such as using React hooks and including new technologies such as RTK Query, React Hook Form, and Zod.",
-        "Created new functionality to allow for trading of private company stock certificates between select users with React, Spring Boot, GWT, and Oracle SQL.",
-        "Assisted Cisco and their more than 71,00 employees in migrating onto the web application by allowing their data to be imported via modifying data validation rules.",
-        "Preemptively fixed issues with multi-factor authentication for more than 200 users with invalid phone numbers by creating a new workflow and scripts to periodically check phone number validity and warn users to change their phone number if their phone number becomes invalid."
+        "React フックの使用や、RTK Query、React Hook Form、Zod などの新しいテクノロジーの使用など、最新のコーディング標準を備えた新しい React 投資家向け Web アプリケーション フロントエンドの作成を主導しました。",
+        "React、Spring Boot、GWT、および Oracle SQL を使用して、選択したユーザー間で非公開会社の株券を取引できるようにする新しい機能を作成しました。",
+        "データ検証ルールを変更してデータをインポートできるようにすることで、Cisco とその 71,00 人を超える従業員が Web アプリケーションに移行するのを支援しました。",
+        "電話番号の有効性を定期的に確認し、電話番号が無効になった場合に電話番号を変更するようユーザーに警告する新しいワークフローとスクリプトを作成することで、無効な電話番号を持つ 200 人を超えるユーザーの多要素認証に関する問題を先制的に修正しました。"
       ]
     },
     {
-      "jobTitle": "Software Developer",
-      "company": "Child Friendly Care",
-      "location": "Calgary",
-      "startDate": "May 2020",
-      "endDate": "May 2021",
+      "jobTitle": "ソフトウェアメーカー",
+      "company": "チャイルドフレンドリーケア",
+      "location": "カルガリー",
+      "dateRange": "2020年5月～2021年5月",
       "imageUrl": "/images/work-experience/cf.jpg",
-      "imageAlt": "Child Friendly Care logo",
+      "imageAlt": "チャイルドフレンドリーケアのロゴ",
       "notableAccomplishments": [
-        "Designed and implemented payment processing using serverless Azure Functions, Azure Cosmos DB, and Rotessa.",
-        "Created functionality to allow for the transfer of financial information data between our web app and QuickBooks through REST API calls.",
-        "Setup and manage Azure CI/CD pipelines and testing architecture for our various microservices."
+        "サーバーレス Azure Functions、Azure Cosmos DB、Rotessa を使用して、支払い処理を設計および実装しました。",
+        "REST API 呼び出しを介して Web アプリと QuickBooks の間で財務情報を転送できるようにする機能を作成しました。",
+        "さまざまなマイクロサービスの Azure CI/CD パイプラインとテスト アーキテクチャをセットアップして管理します。"
       ]
     },
     {
-      "jobTitle": "Intern, Facilities Engineering",
-      "company": "ATCO Gas Transmission",
-      "location": "Edmonton",
-      "startDate": "May 2017",
-      "endDate": "August 2018",
+      "jobTitle": "インターン、設備工学",
+      "company": "ATCOガス輸送",
+      "location": "エドモントン",
+      "dateRange": "2017年5月～2018年8月",
       "imageUrl": "/images/work-experience/atco.jpg",
-      "imageAlt": "ATCO logo",
+      "imageAlt": "ATCOのロゴ",
       "notableAccomplishments": [
-        "Designed a brand-new meter station to replace an old meter station with an estimated budget of $350k.",
-        "Removed a meter station from project conception to land reclamation on budget ($200K) and on time.",
-        "Completed a tight deadline project (1 week) to check and ensure the accuracy of a job procedure for a $1 million project."
+        "推定予算 350,000 ドルで、古いメーター ステーションを交換するための真新しいメーター ステーションを設計しました。",
+        "予算 ($200,000) と時間どおりに、プロジェクトの構想から土地の埋め立てまでメーター ステーションを削除しました。",
+        "締め切りが厳しいプロジェクト (1 週間) を完了し、100 万ドルのプロジェクトのジョブ手順の正確性を確認して確認しました。"
       ]
     },
     {
-      "jobTitle": "Summer Student, Relief Operator",
-      "company": "Canadian Natural Resources Limited",
-      "location": "Lloydminster",
-      "startDate": "May 2016",
-      "endDate": "August 2016",
+      "jobTitle": "夏の学生、救援オペレーター",
+      "company": "カナディアン ナチュラル リソーシズ リミテッド",
+      "location": "ロイドミンスター",
+      "dateRange": "2016年5月～2016年8月",
       "imageUrl": "/images/work-experience/cnrl.jpg",
-      "imageAlt": "Canadian Natural Resources Limited logo",
+      "imageAlt": "カナディアン ナチュラル リソーシズ リミテッドのロゴ",
       "notableAccomplishments": [
-        "Operated 34 heavy oil wells in Marshall and Lone Rock oil fields within Lloydminster district.",
-        "Performed maintenance and production data entry.",
-        "Optimized heavy oil wells which included shooting fluid level and adjusting pump speeds.",
-        "Organized various well services and rig work when wells were down."
+        "ロイドミンスター地区のマーシャル油田とローンロック油田で 34 の重油井を運営。",
+        "メンテナンスと生産データ入力を行いました。",
+        "液体レベルの撮影とポンプ速度の調整を含む最適化された重油井。",
+        "井戸がダウンしたときに、さまざまな井戸サービスとリグ作業を組織しました。"
       ]
     },
     {
-      "jobTitle": "Leader",
-      "company": "University of Calgary",
-      "location": "Calgary",
-      "startDate": "July 2015",
-      "endDate": "August 2015",
+      "jobTitle": "リーダー",
+      "company": "カルガリー大学",
+      "location": "カルガリー",
+      "dateRange": "2015年7月～2015年8月",
       "imageUrl": "/images/work-experience/uofc.jpg",
-      "imageAlt": "University of Calgary logo",
+      "imageAlt": "カルガリー大学のロゴ",
       "notableAccomplishments": [
-        "Supervised young attendees, prepared new activities and assisted camp instructors in teaching new skills."
+        "若い参加者を監督し、新しい活動を準備し、キャンプのインストラクターが新しいスキルを教えるのを手伝いました。"
       ]
     }
   ],
   "educationItems": [
     {
-      "dateRange": "September 2019 - August 2020",
-      "title": "MEng, Software Engineering",
-      "institution": "University of Calgary, Schulich School of Engineering",
-      "location": "Calgary, Alberta",
-      "accomplishment": "3.97/4.0 GPA"
+      "dateRange": "2019年9月～2020年8月",
+      "title": "MEng、ソフトウェアエンジニアリング",
+      "institution": "カルガリー大学シューリッヒ工科大学",
+      "location": "アルバータ州カルガリー",
+      "accomplishment": "3.97 / 4.0 GPA"
     },
     {
-      "dateRange": "September 2014 - April 2019",
-      "title": "BSc, Chemical Engineering with minor in Petroleum Engineering",
-      "institution": "University of Calgary, Schulich School of Engineering",
-      "location": "Calgary, Alberta",
-      "accomplishment": "Graduated with Distinction; 3.78/4.0 GPA"
+      "dateRange": "2014年9月～2019年4月",
+      "title": "BSc、化学工学、石油工学副専攻",
+      "institution": "カルガリー大学シューリッヒ工科大学",
+      "location": "アルバータ州カルガリー",
+      "accomplishment": "優秀な成績で卒業。 3.78 / 4.0 GPA"
     }
   ],
-  "emailSuccessfullySent": "Email successfully sent!",
+  "emailSuccessfullySent": "メールの送信するのを成功しました！",
   "errors": {
-    "invalidEmail": "Must be a valid email address",
-    "nameRequired": "Name is required",
-    "emailRequired": "Email is required",
-    "subjectRequired": "Subject is required",
-    "messageRequired": "Message is required"
+    "invalidEmail": "妥当メールアドレスは必要です",
+    "nameRequired": "名前は必要です",
+    "emailRequired": "メールアドレスは必要です",
+    "subjectRequired": "主語は必要です",
+    "messageRequired": "メッセージは必要です"
   },
   "sections": {
-    "about": "about",
-    "workExperience": "work-experience",
-    "sideProjects": "side-projects",
-    "contact": "contact",
-    "education": "education"
+    "about": "自分について",
+    "workExperience": "実務経験",
+    "sideProjects": "サイドプロジェクト",
+    "contact": "お問い合わせ",
+    "education": "教育"
   }
 }

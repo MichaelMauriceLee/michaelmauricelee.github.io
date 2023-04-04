@@ -33,7 +33,7 @@ const TitleCard = () => {
           <div className="text-left text-l md:text-xl">
             {t('softwareEngineer')}
           </div>
-          <h1 className="text-center text-7xl md:text-9xl">Michael Lee</h1>
+          <h1 className="text-center text-7xl md:text-9xl">{t('michaelLee')}</h1>
           <div className="text-right text-l md:text-xl">
             {t('webDevelopment')}
           </div>

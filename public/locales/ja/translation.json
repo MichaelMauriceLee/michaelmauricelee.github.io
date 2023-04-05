@@ -10,6 +10,8 @@
   "education": "教育",
   "projects": "サイドプロジェクト",
   "aboutMe": "自分について",
+  "universityDegrees": "大学学位",
+  "certifications": "認証",
   "submit": "投入",
   "description": "マイケル・リーのポートフォリオ",
   "softwareEngineer": "ソフトウェアメーカー",
@@ -67,10 +69,10 @@
       "imageUrl": "/images/work-experience/morgan-stanley.jpg",
       "imageAlt": "モルガン・スタンレーのロゴ",
       "notableAccomplishments": [
-        "React フックの使用や、RTK Query、React Hook Form、Zod などの新しいテクノロジーの使用など、最新のコーディング標準を備えた新しい React 投資家向け Web アプリケーション フロントエンドの作成を主導しました。",
+        "RTK Query、React Hook Form、Zod などの新しいテクノロジーを使用して、新しい React 投資家向け Web アプリケーション フロントエンドの作成を主導し、開発者のエクスペリエンスを向上させ、反復サイクルを高速化しました。",
         "React、Spring Boot、GWT、および Oracle SQL を使用して、選択したユーザー間で非公開会社の株券を取引できるようにする新しい機能を作成しました。",
-        "データ検証ルールを変更してデータをインポートできるようにすることで、Cisco とその 71,00 人を超える従業員が Web アプリケーションに移行するのを支援しました。",
-        "電話番号の有効性を定期的に確認し、電話番号が無効になった場合に電話番号を変更するようユーザーに警告する新しいワークフローとスクリプトを作成することで、無効な電話番号を持つ 200 人を超えるユーザーの多要素認証に関する問題を先制的に修正しました。"
+        "データ検証ルールを変更してデータをインポートできるようにすることで、Cisco とその 71,000 人を超える従業員が Web アプリケーションに移行するのを支援しました。",
+        "番号が無効になった場合に電話番号を変更するようにユーザーに警告する新しいワークフローを作成することにより、多要素認証を使用する 200 人を超えるユーザーの問題を予防的に修正しました。"
       ]
     },
     {
@@ -141,6 +143,12 @@
       "accomplishment": "優秀な成績で卒業。 3.78 / 4.0 GPA"
     }
   ],
+  "certificationItems": [
+    {
+      "title": "JLPT - N3",
+      "date": "2018年1月"
+    }
+  ],
   "emailSuccessfullySent": "メールの送信するのを成功しました！",
   "errors": {
     "invalidEmail": "妥当メールアドレスは必要です",
@@ -154,6 +162,7 @@
     "workExperience": "実務経験",
     "sideProjects": "サイドプロジェクト",
     "contact": "お問い合わせ",
-    "education": "教育"
+    "education": "教育",
+    "certifications": "ライセンスと認証"
   }
 }

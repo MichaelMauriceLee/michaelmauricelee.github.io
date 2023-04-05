@@ -10,6 +10,8 @@
   "education": "Education",
   "projects": "Side Projects",
   "aboutMe": "About Me",
+  "universityDegrees": "University Degrees",
+  "certifications": "Certifications",
   "submit": "Submit",
   "description": "Michael Lee's Portfolio",
   "softwareEngineer": "Software Engineer",
@@ -68,10 +70,10 @@
       "imageUrl": "/images/work-experience/morgan-stanley.jpg",
       "imageAlt": "Morgan Stanley logo",
       "notableAccomplishments": [
-        "Led creation of our new React investor web application frontend with up-to-date coding standards such as using React hooks and including new technologies such as RTK Query, React Hook Form, and Zod.",
+        "Led creation of our new React investor web application frontend with new technologies such as RTK Query, React Hook Form, and Zod for a better developer experience and faster iteration cycles.",
         "Created new functionality to allow for trading of private company stock certificates between select users with React, Spring Boot, GWT, and Oracle SQL.",
-        "Assisted Cisco and their more than 71,00 employees in migrating onto the web application by allowing their data to be imported via modifying data validation rules.",
-        "Preemptively fixed issues with multi-factor authentication for more than 200 users with invalid phone numbers by creating a new workflow and scripts to periodically check phone number validity and warn users to change their phone number if their phone number becomes invalid."
+        "Assisted Cisco and their more than 71,000 employees in migrating onto the web application by allowing their data to be imported via modifying data validation rules.",
+        "Preemptively fixed issues for more than 200 users with multi-factor authentication by creating a new workflow to warn users to change their phone number if their number becomes invalid."
       ]
     },
     {
@@ -142,6 +144,12 @@
       "accomplishment": "Graduated with Distinction; 3.78/4.0 GPA"
     }
   ],
+  "certificationItems": [
+    {
+      "title": "JLPT - N3",
+      "date": "January 2018"
+    }
+  ],
   "emailSuccessfullySent": "Email successfully sent!",
   "errors": {
     "invalidEmail": "Must be a valid email address",
@@ -155,6 +163,7 @@
     "workExperience": "work-experience",
     "sideProjects": "side-projects",
     "contact": "contact",
-    "education": "education"
+    "education": "education",
+    "certifications": "licences-and-certifications"
   }
 }

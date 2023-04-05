@@ -29,3 +29,8 @@ export type EducationItem = {
   location: string;
   accomplishment: string;
 };
+
+export type CertificationItem = {
+  title: string;
+  date: string;
+}

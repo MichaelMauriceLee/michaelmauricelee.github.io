@@ -1,7 +1,7 @@
 import { Card, Timeline } from 'flowbite-react';
 import { useTranslation } from 'react-i18next';
 import { useInView } from 'react-intersection-observer';
-import type { EducationItem } from '../types';
+import type { CertificationItem, EducationItem } from '../types';
 
 const EducationSection = () => {
   const { t } = useTranslation();
@@ -10,6 +10,10 @@ const EducationSection = () => {
   const educationItems = t('educationItems', {
     returnObjects: true,
   }) as EducationItem[];
+
+  const certificationItems = t('certificationItems', {
+    returnObjects: true,
+  }) as CertificationItem[];
 
   return (
     <div
@@ -25,6 +29,11 @@ const EducationSection = () => {
         <div className="text-2xl font-bold tracking-tight text-gray-900">
           {t('education')}
         </div>
+
+        <div className="text-xl font-bold tracking-tight text-gray-500 italic">
+          {t('universityDegrees')}
+        </div>
+
         <Timeline>
           {educationItems.map((educationItem) => (
             <Timeline.Item key={educationItem.dateRange}>
@@ -41,6 +50,28 @@ const EducationSection = () => {
             </Timeline.Item>
           ))}
         </Timeline>
+
+        <div className="text-xl font-bold tracking-tight text-gray-500 italic">
+          {t('certifications')}
+        </div>
+
+        <div>
+          {certificationItems.map((certificationItems) => (
+            <div
+              className="flex flex-col md:flex-row mb-3"
+              key={certificationItems.title}
+            >
+              <div className="flex-col">
+                <div className="text-xl font-bold tracking-tight text-gray-900">
+                  {certificationItems.title}
+                </div>
+                <div className="text-l text-gray-500">
+                  {certificationItems.date}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </Card>
     </div>
   );

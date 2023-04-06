@@ -52,11 +52,11 @@
       "codeUrl": "https://github.com/MichaelMauriceLee/FF14-Race-Identifer",
       "modalInfo": {
         "imageUrl": "/images/projects/ff14-race-identifer.jpg",
-        "description": "ゲーム ファイナル ファンタジー 14 からのレースのリアルタイム オブジェクト検出。凍結された推論モデルは、Tensorflow のオブジェクト検出 API を使用し、Google のfaster_rcnn_inception_v2_coco_2018_01_28 モデルを再トレーニングして作成され、ファイナル ファンタジー 14 の任意のキャラクターのコンピューター画面上の画像を検出し、その情報を表示します。画面上のキャラクターの人種と性別。"
+        "description": "ファイナル ファンタジー 14 からのレースのリアルタイム オブジェクト検出。凍結された推論モデルは、Tensorflow のオブジェクト検出 API を使用し、Google のfaster_rcnn_inception_v2_coco_2018_01_28 モデルを再トレーニングして作成され、ファイナル ファンタジー 14 の任意のキャラクターのコンピューター画面上の画像を検出し、その情報を表示します。画面上のキャラクターの人種と性別。"
       },
       "cardInfo": {
         "imageUrl": "/images/projects/ff14-race-identifer-sm.jpg",
-        "description": "ゲーム Final Fantasy 14 からのレースのリアルタイム オブジェクト検出。"
+        "description": "ファイナル ファンタジー 14 からのレースのリアルタイム オブジェクト検出。"
       }
     }
   ],
@@ -69,7 +69,7 @@
       "imageUrl": "/images/work-experience/morgan-stanley.jpg",
       "imageAlt": "モルガン・スタンレーのロゴ",
       "notableAccomplishments": [
-        "RTK Query、React Hook Form、Zod などの新しいテクノロジーを使用して、新しい React 投資家向け Web アプリケーション フロントエンドの作成を主導し、開発者のエクスペリエンスを向上させ、反復サイクルを高速化しました。",
+        "RTK Query、React Hook Form、Zod などの新しいテクノロジを使用して、新しい React 投資家向け Web アプリケーション フロントエンドの作成を主導し、開発者のエクスペリエンスを向上させ、開発速度を向上させました。",
         "React、Spring Boot、GWT、および Oracle SQL を使用して、選択したユーザー間で非公開会社の株券を取引できるようにする新しい機能を作成しました。",
         "データ検証ルールを変更してデータをインポートできるようにすることで、Cisco とその 71,000 人を超える従業員が Web アプリケーションに移行するのを支援しました。",
         "番号が無効になった場合に電話番号を変更するようにユーザーに警告する新しいワークフローを作成することにより、多要素認証を使用する 200 人を超えるユーザーの問題を予防的に修正しました。"

@@ -70,7 +70,7 @@
       "imageUrl": "/images/work-experience/morgan-stanley.jpg",
       "imageAlt": "Morgan Stanley logo",
       "notableAccomplishments": [
-        "Led creation of our new React investor web application frontend with new technologies such as RTK Query, React Hook Form, and Zod for a better developer experience and faster iteration cycles.",
+        "Led creation of our new React investor web application frontend with new technologies such as RTK Query, React Hook Form, and Zod for a better developer experience and increased development speed.",
         "Created new functionality to allow for trading of private company stock certificates between select users with React, Spring Boot, GWT, and Oracle SQL.",
         "Assisted Cisco and their more than 71,000 employees in migrating onto the web application by allowing their data to be imported via modifying data validation rules.",
         "Preemptively fixed issues for more than 200 users with multi-factor authentication by creating a new workflow to warn users to change their phone number if their number becomes invalid."

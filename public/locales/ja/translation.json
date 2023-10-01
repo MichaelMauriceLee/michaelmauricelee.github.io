@@ -26,13 +26,26 @@
       "codeUrl": "https://github.com/MichaelMauriceLee/chie",
       "modalInfo": {
         "imageUrl": "/images/projects/chie.jpg",
-        "description": "ASP .NET Core、Microsoft SQL Server、および React を使用して構築され、Microsoft Azure を使用して展開される、meetup.com に似たフル スタックのソーシャル メディア Web アプリケーション。ユーザーは、イベントや他の志を同じくするユーザーを作成および検索できます。主な機能に加えて、ユーザーはイベントにコメントを残したり、プロフィールに写真をアップロードしたり、フォロワーのリストを保持したりできます。"
+        "description": "Remix メタフレームワークと Azure Cognitive Services を使用して構築された Web アプリ。ユーザーが入力した単語の定義は Jisho の API を使用して入力され、ボタンをクリックするだけでユーザーが選択した Anki デッキに簡単に追加できます。ユーザーは写真をアップロードして、Azure を使用してテキストから単語への変換を行うことができます。ユーザーはマイクを使用して、Azure による音声テキスト変換機能を介して単語を検索することもできます。"
       },
       "cardInfo": {
         "imageUrl": "/images/projects/chie-sm.jpg",
         "description": "音声認識、画像認識、Anki連携による和英辞書"
       },
-      "webAppURL": "https://chie.vercel.app/"
+      "webAppURL": "https://chie.vercel.app"
+    },
+    {
+      "title": "Counter Strike 2 ポートフォリオ トラッカー Web アプリケーション",
+      "codeUrl": "https://github.com/MichaelMauriceLee/csvestments",
+      "modalInfo": {
+        "imageUrl": "/images/projects/csvestments.jpg",
+        "description": "SvelteKit と PlanetScale を使用して構築された Web アプリ。ユーザーは、Steam アカウントでログインすることで保有物のスプレッドシートを管理でき、サードパーティのマーケット API を使用して保有物のリアルタイムの価格データを確認できます。"
+      },
+      "cardInfo": {
+        "imageUrl": "/images/projects/csvestments-sm.jpg",
+        "description": "認証とリアルタイムの価格追跡を備えた Counter Strike 2 ポートフォリオ トラッカー"
+      },
+      "webAppURL": "https://csvestments.vercel.app"
     },
     {
       "title": "ソーシャル メディア Web アプリケーション",
@@ -63,16 +76,16 @@
   "workExperience": [
     {
       "jobTitle": "ソフトウェアメーカー",
-      "company": "モルガン・スタンレー",
+      "company": "モルガン・スタンレー・アット・ワーク",
       "location": "カルガリー",
       "dateRange": "2021年5月～現在",
       "imageUrl": "/images/work-experience/morgan-stanley.jpg",
-      "imageAlt": "モルガン・スタンレーのロゴ",
+      "imageAlt": "モルガン・スタンレー・アット・ワークーのロゴ",
       "notableAccomplishments": [
+        "React を使用して既存のリリース選択プロセスを改良し、複数の権利確定済み制限付き株式ユニットの保有者がより良いユーザー エクスペリエンスを実現できるようにしました。",
         "RTK Query、React Hook Form、Zod などの新しいテクノロジを使用して、新しい React 投資家向け Web アプリケーション フロントエンドの作成を主導し、開発者のエクスペリエンスを向上させ、開発速度を向上させました。",
         "React、Spring Boot、GWT、および Oracle SQL を使用して、選択したユーザー間で非公開会社の株券を取引できるようにする新しい機能を作成しました。",
-        "データ検証ルールを変更してデータをインポートできるようにすることで、Cisco とその 71,000 人を超える従業員が Web アプリケーションに移行するのを支援しました。",
-        "番号が無効になった場合に電話番号を変更するようにユーザーに警告する新しいワークフローを作成することにより、多要素認証を使用する 200 人を超えるユーザーの問題を予防的に修正しました。"
+        "データ検証ルールを変更してデータをインポートできるようにすることで、Cisco とその 71,000 人を超える従業員が Web アプリケーションに移行するのを支援しました。"
       ]
     },
     {
@@ -145,8 +158,8 @@
   ],
   "certificationItems": [
     {
-      "title": "JLPT - N3",
-      "date": "2018年1月"
+      "title": "JLPT - N2",
+      "date": "2023年7月"
     }
   ],
   "emailSuccessfullySent": "メールの送信するのを成功しました！",

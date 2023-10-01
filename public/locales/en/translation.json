@@ -26,13 +26,26 @@
       "codeUrl": "https://github.com/MichaelMauriceLee/chie",
       "modalInfo": {
         "imageUrl": "/images/projects/chie.jpg",
-        "description": "Full stack social media web application similar to meetup.com, built using ASP .NET Core, Microsoft SQL Server, and React and deployed using Microsoft Azure.  Users can create and search for events and other like-minded users.  In addition to its main functionality, users can leave comments on events and upload photos to their profile, as well as keep a list of followers."
+        "description": "Web app built using the Remix meta-framework and Azure Cognitive Services.  Defintions for the user's entered words are populated using Jisho's API and can be easily added to the user's selected Anki deck with a click of a button.  Users can upload pictures to allow text-to-word conversion using Azure.  Users can also use their microphone to search words via speech-to-text functionality powered by Azure."
       },
       "cardInfo": {
         "imageUrl": "/images/projects/chie-sm.jpg",
         "description": "Japanese-English dictionary with voice recognition, image recognition, and Anki Integration"
       },
-      "webAppURL": "https://chie.vercel.app/"
+      "webAppURL": "https://chie.vercel.app"
+    },
+    {
+      "title": "Counter Strike 2 Portfolio Tracker Web Application",
+      "codeUrl": "https://github.com/MichaelMauriceLee/csvestments",
+      "modalInfo": {
+        "imageUrl": "/images/projects/csvestments.jpg",
+        "description": "Web app built using the SvelteKit and PlanetScale.  Users can manage a spreadsheet of their holdings by logging in with their Steam account and can see real-time price data for their holdings using third party market APIs."
+      },
+      "cardInfo": {
+        "imageUrl": "/images/projects/csvestments-sm.jpg",
+        "description": "Counter Strike 2 portfolio tracker with authentication and real-time price tracking"
+      },
+      "webAppURL": "https://csvestments.vercel.app"
     },
     {
       "title": "Social Media Web Application",
@@ -63,17 +76,17 @@
   "workExperience": [
     {
       "jobTitle": "Software Developer",
-      "company": "Morgan Stanley",
+      "company": "Morgan Stanley at Work",
       "location": "Calgary",
       "dateRange": "May 2021 - Present",
       "endDate": "Present",
       "imageUrl": "/images/work-experience/morgan-stanley.jpg",
-      "imageAlt": "Morgan Stanley logo",
+      "imageAlt": "Morgan Stanley at Work logo",
       "notableAccomplishments": [
+        "Revamped existing release election process using React to allow for holders of multiple vested restricted stock units to have a better user experience",
         "Led creation of our new React investor web application frontend with new technologies such as RTK Query, React Hook Form, and Zod for a better developer experience and increased development speed.",
         "Created new functionality to allow for trading of private company stock certificates between select users with React, Spring Boot, GWT, and Oracle SQL.",
-        "Assisted Cisco and their more than 71,000 employees in migrating onto the web application by allowing their data to be imported via modifying data validation rules.",
-        "Preemptively fixed issues for more than 200 users with multi-factor authentication by creating a new workflow to warn users to change their phone number if their number becomes invalid."
+        "Assisted Cisco and their more than 71,000 employees in migrating onto the web application by allowing their data to be imported via modifying data validation rules."
       ]
     },
     {
@@ -146,8 +159,8 @@
   ],
   "certificationItems": [
     {
-      "title": "JLPT - N3",
-      "date": "January 2018"
+      "title": "JLPT - N2",
+      "date": "July 2023"
     }
   ],
   "emailSuccessfullySent": "Email successfully sent!",

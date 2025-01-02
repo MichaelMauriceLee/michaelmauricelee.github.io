@@ -8,7 +8,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "generate": "npm astro-i18next generate"
+    "generate": "npm run astro-i18next generate"
   },
   "dependencies": {
     "@ant-design/icons": "^5.0.1",

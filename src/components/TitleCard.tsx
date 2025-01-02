@@ -3,8 +3,9 @@ import { useTranslation } from 'react-i18next';
 import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-scroll';
 import { offset } from '../store';
+import React from 'react';
 
-const TitleCard = () => {
+export default function TitleCard() {
   const $offset = useStore(offset);
   const { t } = useTranslation();
   const { ref, inView } = useInView({ triggerOnce: true });
@@ -33,7 +34,9 @@ const TitleCard = () => {
           <div className="text-left text-l md:text-xl">
             {t('softwareEngineer')}
           </div>
-          <h1 className="text-center text-7xl md:text-9xl">{t('michaelLee')}</h1>
+          <h1 className="text-center text-7xl md:text-9xl">
+            {t('michaelLee')}
+          </h1>
           <div className="text-right text-l md:text-xl">
             {t('webDevelopment')}
           </div>
@@ -41,6 +44,4 @@ const TitleCard = () => {
       </Link>
     </div>
   );
-};
-
-export default TitleCard;
+}

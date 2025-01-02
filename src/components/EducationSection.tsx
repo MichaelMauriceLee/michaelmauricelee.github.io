@@ -2,8 +2,9 @@ import { Card, Timeline } from 'flowbite-react';
 import { useTranslation } from 'react-i18next';
 import { useInView } from 'react-intersection-observer';
 import type { CertificationItem, EducationItem } from '../types';
+import React from 'react';
 
-const EducationSection = () => {
+export default function EducationSection() {
   const { t } = useTranslation();
   const { ref, inView } = useInView({ triggerOnce: true });
 
@@ -75,6 +76,4 @@ const EducationSection = () => {
       </Card>
     </div>
   );
-};
-
-export default EducationSection;
+}

@@ -2,8 +2,9 @@ import Card from './Card';
 import { useTranslation } from 'react-i18next';
 import { useInView } from 'react-intersection-observer';
 import type { WorkExperience } from '../types';
+import React from 'react';
 
-const WorkExperienceSection = () => {
+export default function WorkExperienceSection() {
   const { t } = useTranslation();
   const { ref, inView } = useInView({ triggerOnce: true });
 
@@ -62,6 +63,4 @@ const WorkExperienceSection = () => {
       </Card>
     </div>
   );
-};
-
-export default WorkExperienceSection;
+}

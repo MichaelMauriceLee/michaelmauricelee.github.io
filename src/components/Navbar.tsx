@@ -13,8 +13,9 @@ import {
 import i18next from 'i18next';
 import i18nextConfig from '../../astro-i18next.config.mjs';
 import classNames from 'classnames';
+import React from 'react';
 
-const Navbar = () => {
+export default function Navbar() {
   const { t } = useTranslation();
   const navbarRef = useRef<HTMLDivElement>(null);
   const $offset = useStore(offset);
@@ -178,6 +179,4 @@ const Navbar = () => {
       </nav>
     </div>
   );
-};
-
-export default Navbar;
+}

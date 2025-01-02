@@ -2,8 +2,9 @@ import { useStore } from '@nanostores/react';
 import { Button, Modal } from 'flowbite-react';
 import { useTranslation } from 'react-i18next';
 import { selectedSideProject } from '../store';
+import React from 'react';
 
-const Popup = () => {
+export default function Popup() {
   const $selectedSideProject = useStore(selectedSideProject);
   const { t } = useTranslation();
 
@@ -32,6 +33,4 @@ const Popup = () => {
       </Modal.Footer>
     </Modal>
   );
-};
-
-export default Popup;
+}

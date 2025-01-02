@@ -3,8 +3,9 @@ import { useTranslation } from 'react-i18next';
 import { useInView } from 'react-intersection-observer';
 import { selectedSideProject } from '../store';
 import type { SideProject } from '../types';
+import React from 'react';
 
-const SideProjectsSection = () => {
+export default function SideProjectsSection() {
   const { t } = useTranslation();
   const { ref, inView } = useInView({ triggerOnce: true });
 
@@ -46,6 +47,4 @@ const SideProjectsSection = () => {
       </Card>
     </div>
   );
-};
-
-export default SideProjectsSection;
+}

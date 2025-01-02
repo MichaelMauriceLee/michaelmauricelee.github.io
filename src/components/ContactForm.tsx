@@ -8,6 +8,7 @@ import { Alert, Button, Spinner } from 'flowbite-react';
 import { useInView } from 'react-intersection-observer';
 import i18next from 'i18next';
 import Card from './Card';
+import React from 'react';
 
 const FormValues = z.object({
   name: z.string().min(1, i18next.t('errors.nameRequired') ?? ''),
@@ -21,7 +22,7 @@ const FormValues = z.object({
 
 type FormValues = z.infer<typeof FormValues>;
 
-const ContactForm = () => {
+export default function ContactForm() {
   const { t } = useTranslation();
   const { ref, inView } = useInView({ triggerOnce: true });
   const [showAlert, setShowAlert] = useState(false);
@@ -156,6 +157,4 @@ const ContactForm = () => {
       </Card>
     </div>
   );
-};
-
-export default ContactForm;
+}

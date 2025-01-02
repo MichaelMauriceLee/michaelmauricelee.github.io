@@ -1,7 +1,8 @@
 import i18next from 'i18next';
 import i18nextConfig from '../../astro-i18next.config.mjs';
+import React from 'react';
 
-const Video = () => {
+export default function Video() {
   return (
     <video
       className="absolute top-0 w-full h-full object-cover -z-10 blur-sm"
@@ -20,6 +21,4 @@ const Video = () => {
       />
     </video>
   );
-};
-
-export default Video;
+}

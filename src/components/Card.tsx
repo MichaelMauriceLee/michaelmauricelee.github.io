@@ -16,7 +16,7 @@ export default function Card({
   imgAlt,
   onClick,
   className,
-}: Props) {
+}: Readonly<Props>) {
   return (
     <div
       className={classNames(

@@ -2,7 +2,7 @@ import emailjs from '@emailjs/browser';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { BaseSyntheticEvent, useState } from 'react';
+import { type BaseSyntheticEvent, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Alert, Button, Spinner } from 'flowbite-react';
 import { useInView } from 'react-intersection-observer';

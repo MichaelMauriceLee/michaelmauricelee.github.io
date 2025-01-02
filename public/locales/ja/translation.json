@@ -35,19 +35,6 @@
       "webAppURL": "https://chie.vercel.app"
     },
     {
-      "title": "Counter Strike 2 ポートフォリオ トラッカー Web アプリケーション",
-      "codeUrl": "https://github.com/MichaelMauriceLee/csvestments",
-      "modalInfo": {
-        "imageUrl": "/images/projects/csvestments.jpg",
-        "description": "SvelteKit と PlanetScale を使用して構築された Web アプリ。ユーザーは、Steam アカウントでログインすることで保有物のスプレッドシートを管理でき、サードパーティのマーケット API を使用して保有物のリアルタイムの価格データを確認できます。"
-      },
-      "cardInfo": {
-        "imageUrl": "/images/projects/csvestments-sm.jpg",
-        "description": "認証とリアルタイムの価格追跡を備えた Counter Strike 2 ポートフォリオ トラッカー"
-      },
-      "webAppURL": "https://csvestments.vercel.app"
-    },
-    {
       "title": "ソーシャル メディア Web アプリケーション",
       "codeUrl": "https://github.com/MichaelMauriceLee/Connectivities",
       "modalInfo": {

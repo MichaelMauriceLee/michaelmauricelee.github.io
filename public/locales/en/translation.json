@@ -15,48 +15,35 @@
   "submit": "Submit",
   "description": "Michael Lee's Portfolio",
   "softwareEngineer": "Software Engineer",
-  "flavourText": "I'm a software engineer specializing in full stack cloud-based web development using technologies such as React, Vue, TypeScript, Java, C# and Microsoft Azure. After deciding to switch careers from traditional engineering, I graduated with a Master of Engineering degree in Software Engineering from the University of Calgary in 2020 and have been working professionally as a web developer ever since with no regrets. I'm always looking to improve myself and interested in job opportunities which offer professional growth in the software industry.",
+  "flavourText": "I am a highly skilled Software Developer specializing in full-stack, cloud-based web development using technologies such as React, Vue, TypeScript, Java, C#, and Microsoft Azure. With a proven track record of building scalable, user-centric web applications, I excel at optimizing system performance and delivering innovative solutions that enhance user satisfaction and operational efficiency.\n\nAfter transitioning from a traditional engineering background, I earned a Master of Engineering degree in Software Engineering from the University of Calgary in 2020. Since then, I have pursued a professional career as a web developer with no regrets, continuously seeking opportunities to grow and improve. I am passionate about tackling challenges, enhancing my expertise, and contributing to projects that promote professional development and innovation in the software industry.",
   "webDevelopment": "Web Development",
   "openApplication": "Open Application",
   "viewCode": "View Code",
   "openMainMenu": "Open main menu",
   "sideProjects": [
     {
-      "title": "Next-Gen Japanese-English Dictionary Web Application",
+      "title": "Next Generation Multilingual Dictionary Web Application",
       "codeUrl": "https://github.com/MichaelMauriceLee/chie",
       "modalInfo": {
         "imageUrl": "/images/projects/chie.jpg",
-        "description": "Web app built using the Remix meta-framework and Azure Cognitive Services.  Defintions for the user's entered words are populated using Jisho's API and can be easily added to the user's selected Anki deck with a click of a button.  Users can upload pictures to allow text-to-word conversion using Azure.  Users can also use their microphone to search words via speech-to-text functionality powered by Azure."
+        "description": "A cutting-edge web application built using Next.js, Azure Cognitive Services, and Azure OpenAI. This innovative platform enables users to obtain detailed definitions of their entered words through a custom ChatGPT model. With seamless integration, users can effortlessly add words to their chosen Anki decks with a single click. The application also features image-to-text conversion capabilities powered by Azure, enhancing accessibility and functionality."
       },
       "cardInfo": {
         "imageUrl": "/images/projects/chie-sm.jpg",
-        "description": "Japanese-English dictionary with voice recognition, image recognition, and Anki Integration"
+        "description": "A state-of-the-art multilingual dictionary with advanced image recognition and Anki deck integration."
       },
       "webAppURL": "https://chie.vercel.app"
-    },
-    {
-      "title": "Counter Strike 2 Portfolio Tracker Web Application",
-      "codeUrl": "https://github.com/MichaelMauriceLee/csvestments",
-      "modalInfo": {
-        "imageUrl": "/images/projects/csvestments.jpg",
-        "description": "Web app built using the SvelteKit and PlanetScale.  Users can manage a spreadsheet of their holdings by logging in with their Steam account and can see real-time price data for their holdings using third party market APIs."
-      },
-      "cardInfo": {
-        "imageUrl": "/images/projects/csvestments-sm.jpg",
-        "description": "Counter Strike 2 portfolio tracker with authentication and real-time price tracking"
-      },
-      "webAppURL": "https://csvestments.vercel.app"
     },
     {
       "title": "Social Media Web Application",
       "codeUrl": "https://github.com/MichaelMauriceLee/Connectivities",
       "modalInfo": {
         "imageUrl": "/images/projects/connectivities.jpg",
-        "description": "Full stack social media web application similar to meetup.com, built using ASP .NET Core, Microsoft SQL Server, and React and deployed using Microsoft Azure. Users can create and search for events and other like-minded users.  In addition to its main functionality, users can leave comments on events and upload photos to their profile, as well as keep a list of followers."
+        "description": "A robust full-stack social media platform, akin to Meetup.com, crafted using ASP.NET Core, Microsoft SQL Server, and React. Deployed on Microsoft Azure, this application empowers users to create, search, and participate in events while connecting with like-minded individuals. Additional features include event commenting, profile photo uploads, follower management, and a dynamic event discovery system."
       },
       "cardInfo": {
         "imageUrl": "/images/projects/connectivities-sm.jpg",
-        "description": "Social media application similar to meetup.com"
+        "description": "A comprehensive social media platform designed for event discovery and community building."
       },
       "webAppURL": "https://connectivities.azurewebsites.net"
     },
@@ -65,28 +52,41 @@
       "codeUrl": "https://github.com/MichaelMauriceLee/FF14-Race-Identifer",
       "modalInfo": {
         "imageUrl": "/images/projects/ff14-race-identifer.jpg",
-        "description": "Real time object detection of races from the game Final Fantasy 14. The frozen inference model was created by using Tensorflow's Object Detection API and retraining Google's faster_rcnn_inception_v2_coco_2018_01_28 model to detect any images on the computer screen of any character from Final Fantasy 14 and display the information of the character's race and gender on screen."
+        "description": "A sophisticated real-time object detection program tailored for identifying character races and genders from the game Final Fantasy XIV. Using TensorFlow's Object Detection API, this application retrains Google's Faster R-CNN Inception V2 COCO model to analyze on-screen images of characters. It delivers instant insights by displaying character race and gender information directly on the screen, elevating user engagement and interaction."
       },
       "cardInfo": {
         "imageUrl": "/images/projects/ff14-race-identifer-sm.jpg",
-        "description": "Real time object detection of races from the game Final Fantasy 14."
+        "description": "An advanced object detection tool for identifying character races and genders in Final Fantasy XIV in real time."
       }
     }
   ],
   "workExperience": [
     {
       "jobTitle": "Software Developer",
+      "company": "Child Friendly Care",
+      "location": "Calgary",
+      "dateRange": "October 2023 - Present",
+      "imageUrl": "/images/work-experience/cf.jpg",
+      "imageAlt": "Child Friendly Care logo",
+      "notableAccomplishments": [
+        "Led a cross-functional team of developers and QA, ensuring stakeholder priorities were met and team ceremonies adhered to agile practices.",
+        "Revamped the 'attendance' microservice and data structure, enabling it to scale for 2,500+ students, reducing urgent issues by 95% and increasing system reliability and user satisfaction.",
+        "Developed and integrated a Google Calendar-inspired feature, enhancing event management for 100+ staff members and enabling seamless scheduling across the system.",
+        "Integrated Capacitor to streamline mobile app development and manage mobile releases, ensuring feature parity with the web app while minimizing maintenance effort."
+      ]
+    },
+    {
+      "jobTitle": "Software Developer",
       "company": "Morgan Stanley at Work",
       "location": "Calgary",
-      "dateRange": "May 2021 - Present",
+      "dateRange": "May 2021 - October 2023",
       "endDate": "Present",
       "imageUrl": "/images/work-experience/morgan-stanley.jpg",
       "imageAlt": "Morgan Stanley at Work logo",
       "notableAccomplishments": [
-        "Revamped existing release election process using React to allow for holders of multiple vested restricted stock units to have a better user experience",
-        "Led creation of our new React investor web application frontend with new technologies such as RTK Query, React Hook Form, and Zod for a better developer experience and increased development speed.",
-        "Created new functionality to allow for trading of private company stock certificates between select users with React, Spring Boot, GWT, and Oracle SQL.",
-        "Assisted Cisco and their more than 71,000 employees in migrating onto the web application by allowing their data to be imported via modifying data validation rules."
+        "Revamped the release election process using React, improving the user experience for holders of multiple vested restricted stock units.",
+        "Led development of a React investor web application using modern technologies like RTK Query, React Hook Form, and Zod, enabling faster iterations and better developer experience.",
+        "Supported Cisco’s successful migration of 71,000+ employees onto the platform by enhancing data validation rules."
       ]
     },
     {
@@ -97,9 +97,8 @@
       "imageUrl": "/images/work-experience/cf.jpg",
       "imageAlt": "Child Friendly Care logo",
       "notableAccomplishments": [
-        "Designed and implemented payment processing using serverless Azure Functions, Azure Cosmos DB, and Rotessa.",
-        "Created functionality to allow for the transfer of financial information between our web app and QuickBooks through REST API calls.",
-        "Setup and manage Azure CI/CD pipelines and testing architecture for our various microservices."
+        "Integrated financial data transfer between the web app and QuickBooks via REST API calls.",
+        "Set up and managed Azure CI/CD pipelines and testing architecture for microservices."
       ]
     },
     {
@@ -110,9 +109,9 @@
       "imageUrl": "/images/work-experience/atco.jpg",
       "imageAlt": "ATCO logo",
       "notableAccomplishments": [
-        "Designed a brand-new meter station to replace an old meter station with an estimated budget of $350K.",
-        "Removed a meter station from project conception to land reclamation on budget ($200K) and on time.",
-        "Completed a tight deadline project (1 week) to check and ensure the accuracy of a job procedure for a $1 million project."
+        "Spearheaded the design of a modernized meter station, replacing an outdated facility, with a meticulously planned budget of $350K.",
+        "Directed the complete decommissioning and land reclamation of a meter station, delivering the project on time and within a $200K budget.",
+        "Successfully reviewed and ensured procedural accuracy for a high-priority $1 million project within a tight one-week deadline, contributing to its seamless execution."
       ]
     },
     {
@@ -123,10 +122,10 @@
       "imageUrl": "/images/work-experience/cnrl.jpg",
       "imageAlt": "Canadian Natural Resources Limited logo",
       "notableAccomplishments": [
-        "Operated 34 heavy oil wells in Marshall and Lone Rock oil fields within Lloydminster district.",
-        "Performed maintenance and production data entry.",
-        "Optimized heavy oil wells which included shooting fluid level and adjusting pump speeds.",
-        "Organized various well services and rig work when wells were down."
+        "Managed daily operations of 34 heavy oil wells across the Marshall and Lone Rock oil fields, ensuring optimal production within the Lloydminster district.",
+        "Conducted comprehensive maintenance tasks and accurately logged production data for enhanced operational efficiency.",
+        "Improved well performance by analyzing fluid levels and calibrating pump speeds for maximum productivity.",
+        "Coordinated and streamlined various well service operations, minimizing downtime through effective organization and collaboration with service teams."
       ]
     },
     {
@@ -137,7 +136,9 @@
       "imageUrl": "/images/work-experience/uofc.jpg",
       "imageAlt": "University of Calgary logo",
       "notableAccomplishments": [
-        "Supervised young attendees, prepared new activities and assisted camp instructors in teaching new skills."
+        "Guided and mentored young attendees, fostering an engaging and supportive environment.",
+        "Designed and implemented innovative activities, enhancing the camp's educational and recreational offerings.",
+        "Collaborated with instructors to teach new skills, ensuring a meaningful and enriching camp experience."
       ]
     }
   ],

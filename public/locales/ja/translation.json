@@ -3,7 +3,7 @@
   "about": "プロフィール",
   "contact": "お問い合わせ",
   "name": "名前",
-  "email": "メール",
+  "email": "メールアドレス",
   "subject": "件名",
   "message": "メッセージ",
   "experience": "職務経歴",
@@ -15,7 +15,7 @@
   "submit": "送信",
   "description": "マイケル・リーのポートフォリオ",
   "softwareEngineer": "ソフトウェアエンジニア",
-  "flavourText": "私はReact、Vue、TypeScript、Java、C#、Microsoft Azureなどの技術を使用したフルスタックのクラウドベースのWeb開発を専門とする高度なスキルを持つソフトウェア開発者です。スケーラブルでユーザー中心のWebアプリケーションを構築し、システムパフォーマンスを最適化し、ユーザー満足度と運用効率を向上させる革新的なソリューションを提供する実績があります。\n\n従来のエンジニアリングのバックグラウンドから転向し、2020年にカルガリー大学でソフトウェア工学の修士号を取得しました。その後、後悔することなくWeb開発者としてのプロフェッショナルキャリアを追求し、成長と改善を求め続けています。課題に取り組むこと、専門知識を向上させること、そしてソフトウェア業界でのプロフェッショナルな発展とイノベーションを促進するプロジェクトに貢献することに情熱を持っています。",
+  "flavourText": "私は、React、Vue、TypeScript、Java、C#、Microsoft Azureなどの技術を使用したフルスタックのクラウドベースWeb開発を専門とする高度なスキルを持つソフトウェア開発者です。スケーラブルでユーザー中心のWebアプリケーションを構築し、システムパフォーマンスを最適化し、ユーザー満足度と運用効率を向上させる革新的なソリューションを提供する実績があります。\n\n従来のエンジニアリング分野から転向し、2020年にカルガリー大学でソフトウェア工学の修士号を取得しました。それ以降、後悔することなくWeb開発者としてのプロフェッショナルなキャリアを追求し、成長と改善を求め続けています。課題に取り組むこと、専門知識を向上させること、そしてソフトウェア業界におけるプロフェッショナルな発展とイノベーションを促進するプロジェクトに貢献することに情熱を注いでいます。",
   "webDevelopment": "Web開発",
   "openApplication": "アプリケーションを開く",
   "viewCode": "コードを見る",
@@ -26,11 +26,11 @@
       "codeUrl": "https://github.com/MichaelMauriceLee/chie",
       "modalInfo": {
         "imageUrl": "/images/projects/chie.jpg",
-        "description": "Next.js、Azure Cognitive Services、Azure OpenAIを使用して構築された最先端のWebアプリケーション。この革新的なプラットフォームでは、カスタムChatGPTモデルを使用して入力した単語の詳細な定義を取得できます。シームレスな統合により、Ankiデッキに単語をワンクリックで追加することが可能です。また、Azureによる画像からテキストへの変換機能を備え、アクセシビリティと機能性が向上しています。"
+        "description": "Next.js、Azure Cognitive Services、およびAzure OpenAIを使用して構築された最先端のWebアプリケーション。この革新的なプラットフォームでは、カスタムChatGPTモデルを使用して入力した単語の詳細な定義を取得できます。シームレスな統合により、Ankiデッキに単語をワンクリックで追加することが可能です。また、Azureによる画像からテキストへの変換機能を備え、アクセシビリティと機能性が向上しています。"
       },
       "cardInfo": {
         "imageUrl": "/images/projects/chie-sm.jpg",
-        "description": "高度な画像認識機能とAnkiデッキ統合を備えた最先端の多言語辞書。"
+        "description": "高度な画像認識とAnkiデッキ統合を備えた最先端の多言語辞書。"
       },
       "webAppURL": "https://chie.vercel.app"
     },
@@ -39,11 +39,11 @@
       "codeUrl": "https://github.com/MichaelMauriceLee/Connectivities",
       "modalInfo": {
         "imageUrl": "/images/projects/connectivities.jpg",
-        "description": "ASP.NET Core、Microsoft SQL Server、Reactを使用して作成された堅牢なフルスタックソーシャルメディアプラットフォーム。このアプリケーションは、ユーザーがイベントを作成、検索、参加し、志を同じくする人々とつながることを可能にします。さらに、イベントコメント、プロフィール写真のアップロード、フォロワー管理、動的イベント発見システムなどの機能を備えています。"
+        "description": "ASP.NET Core、Microsoft SQL Server、およびReactを使用して構築された堅牢なフルスタックソーシャルメディアプラットフォーム。このアプリケーションでは、ユーザーがイベントを作成、検索、参加し、志を同じくする人々とつながることができます。イベントコメント、プロフィール写真のアップロード、フォロワー管理、動的なイベント発見システムなどの追加機能も備えています。"
       },
       "cardInfo": {
         "imageUrl": "/images/projects/connectivities-sm.jpg",
-        "description": "イベント発見とコミュニティ構築のために設計された包括的なソーシャルメディアプラットフォーム。"
+        "description": "イベント発見とコミュニティ構築のための包括的なソーシャルメディアプラットフォーム。"
       },
       "webAppURL": "https://connectivities.azurewebsites.net"
     },
@@ -52,11 +52,11 @@
       "codeUrl": "https://github.com/MichaelMauriceLee/FF14-Race-Identifer",
       "modalInfo": {
         "imageUrl": "/images/projects/ff14-race-identifer.jpg",
-        "description": "GoogleのFaster R-CNN Inception V2 COCOモデルを再トレーニングして、Final Fantasy XIVのキャラクターの種族と性別を画面上の画像からリアルタイムで検出するために設計された高度な物体検出プログラム。このプログラムは、種族や性別の情報を画面上に即座に表示し、ユーザーのエンゲージメントとインタラクションを向上させます。"
+        "description": "Final Fantasy XIVのキャラクター種族と性別をリアルタイムで識別するための高度な物体検出プログラム。TensorFlowのObject Detection APIを使用し、GoogleのFaster R-CNN Inception V2 COCOモデルを再トレーニングしました。画面上のキャラクター情報を瞬時に表示し、ユーザーエンゲージメントを向上させます。"
       },
       "cardInfo": {
         "imageUrl": "/images/projects/ff14-race-identifer-sm.jpg",
-        "description": "Final Fantasy XIVのキャラクターの種族と性別をリアルタイムで特定する高度な物体検出ツール。"
+        "description": "Final Fantasy XIVのキャラクター種族と性別をリアルタイムで識別する高度な物体検出ツール。"
       }
     }
   ],
@@ -83,9 +83,21 @@
       "imageUrl": "/images/work-experience/morgan-stanley.jpg",
       "imageAlt": "Morgan Stanley at Workのロゴ",
       "notableAccomplishments": [
-        "複数の制限付き株式ユニットを所有するホルダーのために、リリース選択プロセスをReactを使用して刷新し、ユーザーエクスペリエンスを向上。",
-        "RTK Query、React Hook Form、Zodなどの最新技術を使用してReact投資家Webアプリケーションの開発を主導。迅速な反復と優れた開発者エクスペリエンスを実現。",
+        "Reactを使用してリリース選択プロセスを刷新し、複数の制限付き株式ユニットを保有するユーザーの体験を向上。",
+        "RTK Query、React Hook Form、Zodなどの最新技術を使用してReact投資家Webアプリケーションの開発を主導。",
         "Ciscoの71,000人以上の従業員のプラットフォーム移行をサポートし、データ検証ルールを強化。"
+      ]
+    },
+    {
+      "jobTitle": "ソフトウェア開発者",
+      "company": "Child Friendly Care",
+      "location": "カルガリー",
+      "dateRange": "2020年5月 - 2021年5月",
+      "imageUrl": "/images/work-experience/cf.jpg",
+      "imageAlt": "Child Friendly Careのロゴ",
+      "notableAccomplishments": [
+        "REST APIコールを介してWebアプリとQuickBooks間での財務データ転送を統合。",
+        "マイクロサービス向けにAzure CI/CDパイプラインとテストアーキテクチャを設定および管理。"
       ]
     },
     {
@@ -96,9 +108,36 @@
       "imageUrl": "/images/work-experience/atco.jpg",
       "imageAlt": "ATCOのロゴ",
       "notableAccomplishments": [
-        "予算350,000ドルで老朽化した施設を置き換える最新のメーター局を設計。",
-        "廃止と土地復元を完全に実施し、200,000ドルの予算内でプロジェクトを時間通りに完了。",
-        "1週間という厳しい期限内での優先度の高い100万ドルプロジェクトのレビューと手続きの正確性を確認。"
+        "古い施設を交換するための最新メーターステーションを設計。",
+        "200,000ドルの予算内での廃止と土地回復を完了。",
+        "1週間の厳しい期限内に高優先度プロジェクトをレビュー。"
+      ]
+    },
+    {
+      "jobTitle": "サマー学生（リリーフオペレーター）",
+      "company": "Canadian Natural Resources Limited",
+      "location": "ロイドミンスター",
+      "dateRange": "2016年5月 - 2016年8月",
+      "imageUrl": "/images/work-experience/cnrl.jpg",
+      "imageAlt": "Canadian Natural Resources Limitedのロゴ",
+      "notableAccomplishments": [
+        "ロイドミンスター地区で34の重油井の運用管理を担当。",
+        "生産データの記録と効率の向上を実施。",
+        "生産性向上のため流体レベルを分析しポンプ速度を調整。",
+        "サービスチームと協力し井戸作業を効率化。"
+      ]
+    },
+    {
+      "jobTitle": "リーダー",
+      "company": "カルガリー大学",
+      "location": "カルガリー",
+      "dateRange": "2015年7月 - 2015年8月",
+      "imageUrl": "/images/work-experience/uofc.jpg",
+      "imageAlt": "カルガリー大学のロゴ",
+      "notableAccomplishments": [
+        "参加者を指導し、魅力的で支援的な環境を構築。",
+        "革新的なアクティビティを設計・実施。",
+        "新しいスキルを教えるためにインストラクターと協力。"
       ]
     }
   ],
@@ -126,11 +165,11 @@
   ],
   "emailSuccessfullySent": "メールが正常に送信されました！",
   "errors": {
-    "invalidEmail": "有効なメールアドレスを入力してください",
-    "nameRequired": "名前は必須です",
-    "emailRequired": "メールアドレスは必須です",
-    "subjectRequired": "件名は必須です",
-    "messageRequired": "メッセージは必須です"
+    "invalidEmail": "有効なメールアドレスを入力してください。",
+    "nameRequired": "名前を入力してください。",
+    "emailRequired": "メールアドレスを入力してください。",
+    "subjectRequired": "件名を入力してください。",
+    "messageRequired": "メッセージを入力してください。"
   },
   "sections": {
     "about": "プロフィール",

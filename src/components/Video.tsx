@@ -1,5 +1,5 @@
-import i18next from 'i18next';
-import i18nextConfig from '../../astro-i18next.config.mjs';
+import i18next from '../i18n/i18n';
+import { defaultLocale } from '../i18n/config';
 import React from 'react';
 
 export default function Video() {
@@ -13,7 +13,7 @@ export default function Video() {
     >
       <source
         src={
-          i18next.language !== i18nextConfig.defaultLocale
+          i18next.language !== defaultLocale
             ? '../background.mp4'
             : 'background.mp4'
         }

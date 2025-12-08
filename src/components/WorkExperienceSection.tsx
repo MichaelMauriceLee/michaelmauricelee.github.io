@@ -17,39 +17,37 @@ export default function WorkExperienceSection() {
       id={t('sections.workExperience') ?? ''}
       className={`mt-5 motion-safe:transition-all motion-safe:duration-1000 ${
         inView
-          ? 'opacity-1 blur-0 motion-safe:translate-x-0'
+          ? 'opacity-100 blur-0 motion-safe:translate-x-0'
           : 'motion-safe:opacity-0 motion-safe:blur-sm motion-safe:-translate-x-full'
       }`}
       ref={ref}
     >
       <Card>
-        <div className="text-2xl font-bold tracking-tight text-gray-900">
+        <div className="section-header">
           {t('experience')}
         </div>
         <div>
           {workExperienceItems.map((workExperienceItem) => (
             <div
-              className="flex flex-col md:flex-row mb-3"
+              className="work-experience-item"
               key={workExperienceItem.dateRange}
             >
               <img
                 src={workExperienceItem.imageUrl}
                 alt={workExperienceItem.imageAlt}
+                className="work-experience-logo"
               />
-              <div className="ml-8 flex-col">
-                <div className="text-xl font-bold tracking-tight text-gray-900">
+              <div className="work-experience-content">
+                <div className="work-experience-company">
                   {workExperienceItem.company}
                 </div>
-                <div className="text-l text-gray-500">
+                <div className="work-experience-title">
                   {workExperienceItem.jobTitle}
                 </div>
-                <div className="text-gray-500">
-                  {workExperienceItem.dateRange}
+                <div className="work-experience-meta">
+                  {workExperienceItem.dateRange} • {workExperienceItem.location}
                 </div>
-                <div className="text-gray-500">
-                  {workExperienceItem.location}
-                </div>
-                <ul className="list-disc">
+                <ul className="work-experience-list">
                   {workExperienceItem.notableAccomplishments.map(
                     (accomplishment) => (
                       <li key={accomplishment}>{accomplishment}</li>

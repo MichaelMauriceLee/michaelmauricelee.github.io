@@ -1,6 +1,6 @@
 ---
-import i18next, { changeLanguage, t } from "i18next";
-import { HeadHrefLangs } from "astro-i18next/components";
+import i18next from "../i18n/i18n";
+const { changeLanguage, t } = i18next;
 import AboutSection from "../components/AboutSection";
 import WorkExperienceSection from "../components/WorkExperienceSection";
 import SideProjectsSection from "../components/SideProjectsSection";
@@ -11,8 +11,11 @@ import Navbar from "../components/Navbar";
 import Video from "../components/Video";
 import Modal from "../components/Modal";
 import EducationSection from "../components/EducationSection";
+import "../styles/global.css";
 
 changeLanguage("en");
+
+const siteUrl = "https://michaelmauricelee.github.io";
 ---
 
 <html lang={i18next.language}>
@@ -22,14 +25,16 @@ changeLanguage("en");
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={t('description')} />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="alternate" hreflang="en" href={siteUrl} />
+    <link rel="alternate" hreflang="ja" href={`${siteUrl}/ja`} />
+    <link rel="alternate" hreflang="x-default" href={siteUrl} />
     <title>Michael Lee</title>
-    <HeadHrefLangs />
   </head>
   <body
     class="scrollbar-thin scrollbar-thumb-blue-400 hover:scrollbar-thumb-blue-700 scrollbar-track-white scrollbar-thumb-rounded-full scrollbar-track-rounded-full"
   >
     <main>
-      <Modal client:only />
+      <Modal client:only="react" />
       <Navbar client:load />
       <Sidebar client:load />
       <div class="h-screen">

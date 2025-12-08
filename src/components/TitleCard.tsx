@@ -15,7 +15,7 @@ export default function TitleCard() {
       id="title-card"
       className={`absolute text-white left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 motion-safe:transition-all motion-safe:duration-700 border-2 rounded-lg backdrop-blur-3xl hover:text-blue-700 hover:border-blue-700 hover:bg-white ${
         inView
-          ? 'opacity-1 blur-0'
+          ? 'opacity-100 blur-0'
           : 'motion-safe:opacity-0 motion-safe:blur-sm motion-safe:translate-y-full'
       }`}
       ref={ref}

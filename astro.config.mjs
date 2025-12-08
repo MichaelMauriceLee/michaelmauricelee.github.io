@@ -1,11 +1,28 @@
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
-import astroI18next from 'astro-i18next';
-import tailwind from '@astrojs/tailwind';
+import tailwindcss from '@tailwindcss/vite';
 import robotsTxt from 'astro-robots-txt';
+
+const ReactCompilerConfig = {};
 
 export default defineConfig({
   site: 'https://michaelmauricelee.github.io',
 
-  integrations: [react(), astroI18next(), tailwind(), robotsTxt()],
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'ja'],
+  },
+
+  integrations: [
+    react({
+      babel: {
+        plugins: [['babel-plugin-react-compiler', ReactCompilerConfig]],
+      },
+    }),
+    robotsTxt(),
+  ],
+
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });

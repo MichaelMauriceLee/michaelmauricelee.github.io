@@ -8,6 +8,7 @@ type Props = {
   imgAlt?: string;
   children: ReactNode;
   onClick?: () => void;
+  variant?: 'default' | 'project';
 };
 
 export default function Card({
@@ -16,17 +17,41 @@ export default function Card({
   imgAlt,
   onClick,
   className,
+  variant = 'default',
 }: Readonly<Props>) {
+  if (variant === 'project') {
+    return (
+      <div
+        className={classNames('project-card', className)}
+        onClick={onClick}
+        onKeyDown={onClick ? (e) => e.key === 'Enter' && onClick() : undefined}
+        role={onClick ? 'button' : undefined}
+        tabIndex={onClick ? 0 : undefined}
+      >
+        {imgSrc && (
+          <div className="overflow-hidden">
+            <img alt={imgAlt ?? ''} src={imgSrc} />
+          </div>
+        )}
+        <div className="project-card-content">{children}</div>
+      </div>
+    );
+  }
+
   return (
     <div
       className={classNames(
-        'flex rounded-lg border border-gray-200 bg-white shadow-md flex-col',
-        className
+        'card flex flex-col',
+        className,
+        onClick && 'cursor-pointer'
       )}
       onClick={onClick}
+      onKeyDown={onClick ? (e) => e.key === 'Enter' && onClick() : undefined}
+      role={onClick ? 'button' : undefined}
+      tabIndex={onClick ? 0 : undefined}
     >
       {imgSrc && (
-        <img className="rounded-t-lg" alt={imgAlt ?? ''} src={imgSrc} />
+        <img className="rounded-t-xl" alt={imgAlt ?? ''} src={imgSrc} />
       )}
       <div className="flex h-full flex-col gap-4 p-6">{children}</div>
     </div>

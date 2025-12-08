@@ -18,27 +18,28 @@ export default function SideProjectsSection() {
       id={t('sections.sideProjects') ?? ''}
       className={`mt-5 motion-safe:transition-all motion-safe:duration-1000 ${
         inView
-          ? 'opacity-1 blur-0 motion-safe:translate-x-0'
+          ? 'opacity-100 blur-0 motion-safe:translate-x-0'
           : 'motion-safe:opacity-0 motion-safe:blur-sm motion-safe:-translate-x-full'
       }`}
       ref={ref}
     >
       <Card>
-        <div className="text-2xl font-bold tracking-tight text-gray-900">
+        <div className="section-header">
           {t('projects')}
         </div>
-        <div className="grid md:grid-cols-4 gap-3 items-stretch">
+        <div className="grid md:grid-cols-3 gap-6 items-stretch">
           {sideProjects.map((sideProject) => (
             <Card
               imgSrc={sideProject.cardInfo.imageUrl}
+              imgAlt={sideProject.title}
               key={sideProject.title}
               onClick={() => selectedSideProject.set(sideProject)}
-              className="cursor-pointer hover:outline hover:outline-blue-400"
+              variant="project"
             >
-              <div className="text-2xl font-bold tracking-tight text-gray-900">
+              <div className="project-card-title">
                 {sideProject.title}
               </div>
-              <p className="font-normal text-gray-700 dark:text-gray-400">
+              <p className="project-card-description">
                 {sideProject.cardInfo.description}
               </p>
             </Card>

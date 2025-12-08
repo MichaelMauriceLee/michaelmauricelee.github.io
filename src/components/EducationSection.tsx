@@ -1,7 +1,7 @@
-import { Card, Timeline } from 'flowbite-react';
 import { useTranslation } from 'react-i18next';
 import { useInView } from 'react-intersection-observer';
 import type { CertificationItem, EducationItem } from '../types';
+import Card from './Card';
 import React from 'react';
 
 export default function EducationSection() {
@@ -22,52 +22,56 @@ export default function EducationSection() {
       ref={ref}
       className={`mt-5 motion-safe:transition-all motion-safe:duration-1000 ${
         inView
-          ? 'opacity-1 blur-0 motion-safe:translate-x-0'
+          ? 'opacity-100 blur-0 motion-safe:translate-x-0'
           : 'motion-safe:opacity-0 motion-safe:blur-sm motion-safe:-translate-x-full'
       }`}
     >
       <Card>
-        <div className="text-2xl font-bold tracking-tight text-gray-900">
+        <div className="section-header">
           {t('education')}
         </div>
 
-        <div className="text-xl font-bold tracking-tight text-gray-500 italic">
+        <div className="subsection-header">
           {t('universityDegrees')}
         </div>
 
-        <Timeline>
+        {/* Custom Timeline */}
+        <div className="custom-timeline">
           {educationItems.map((educationItem) => (
-            <Timeline.Item key={educationItem.dateRange}>
-              <Timeline.Point />
-              <Timeline.Content>
-                <Timeline.Time>{educationItem.dateRange}</Timeline.Time>
-                <Timeline.Title>{educationItem.title}</Timeline.Title>
-                <Timeline.Body>
+            <div key={educationItem.dateRange} className="timeline-item">
+              <div className="timeline-point"></div>
+              <div className="timeline-content">
+                <time className="timeline-time">{educationItem.dateRange}</time>
+                <h3 className="timeline-title">{educationItem.title}</h3>
+                <p className="timeline-body">
                   {educationItem.institution} <br />
                   {educationItem.location} <br />
                   {educationItem.accomplishment}
-                </Timeline.Body>
-              </Timeline.Content>
-            </Timeline.Item>
+                </p>
+              </div>
+            </div>
           ))}
-        </Timeline>
+        </div>
 
-        <div className="text-xl font-bold tracking-tight text-gray-500 italic">
+        <div className="subsection-header">
           {t('certifications')}
         </div>
 
         <div>
-          {certificationItems.map((certificationItems) => (
+          {certificationItems.map((certItem) => (
             <div
-              className="flex flex-col md:flex-row mb-3"
-              key={certificationItems.title}
+              className="certification-item"
+              key={certItem.title}
             >
-              <div className="flex-col">
-                <div className="text-xl font-bold tracking-tight text-gray-900">
-                  {certificationItems.title}
+              <div className="certification-badge">
+                N2
+              </div>
+              <div>
+                <div className="certification-title">
+                  {certItem.title}
                 </div>
-                <div className="text-l text-gray-500">
-                  {certificationItems.date}
+                <div className="certification-date">
+                  {certItem.date}
                 </div>
               </div>
             </div>

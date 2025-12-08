@@ -10,8 +10,8 @@ import {
   LinkedinFilled,
   MenuOutlined,
 } from '@ant-design/icons';
-import i18next from 'i18next';
-import i18nextConfig from '../../astro-i18next.config.mjs';
+import i18next from '../i18n/i18n';
+import { defaultLocale } from '../i18n/config';
 import classNames from 'classnames';
 import React from 'react';
 
@@ -22,7 +22,9 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    navbarRef.current && offset.set(-navbarRef.current.clientHeight);
+    if (navbarRef.current) {
+      offset.set(-navbarRef.current.clientHeight);
+    }
   }, [navbarRef]);
 
   const handleLogoClick = () => {
@@ -34,16 +36,21 @@ export default function Navbar() {
     <div id="header" ref={navbarRef} className="fixed w-full top-0 left-0 z-20">
       <nav className="border-gray-200 py-2.5 bg-white border">
         <div className="mx-6 flex flex-wrap items-center justify-between">
-          <img
-            src={
-              i18next.language !== i18nextConfig.defaultLocale
-                ? '../images/logo.png'
-                : 'images/logo.png'
-            }
-            className="mr-3 h-6 sm:h-9 cursor-pointer hover:outline hover:outline-2 hover:outline-blue-400 rounded"
+          <button
+            type="button"
             onClick={handleLogoClick}
-            alt="Michael Lee's Logo"
-          />
+            className="mr-3 h-6 sm:h-9 cursor-pointer hover:outline hover:outline-2 hover:outline-blue-400 rounded"
+          >
+            <img
+              src={
+                i18next.language !== defaultLocale
+                  ? '../images/logo.png'
+                  : 'images/logo.png'
+              }
+              className="h-full"
+              alt="Michael Lee's Logo"
+            />
+          </button>
 
           <div className="flex space-x-2 md:order-2">
             <LanguageSelector />
@@ -59,15 +66,15 @@ export default function Navbar() {
 
           <div
             className={classNames(
-              'w-full md:block md:w-auto',
-              isOpen ? '' : 'hidden'
+              'mobile-menu w-full md:block md:w-auto',
+              isOpen ? 'open' : 'hidden'
             )}
           >
-            <ul className="mt-4 flex flex-col md:mt-0 md:flex-row md:space-x-8 md:text-sm md:font-medium">
-              <li>
+            <ul className="mobile-menu-list mt-4 flex flex-col md:mt-0 md:flex-row md:space-x-8 md:text-sm md:font-medium">
+              <li className="mobile-menu-item">
                 <Link
-                  activeClass="text-blue-700"
-                  className="hover:text-blue-400"
+                  activeClass="active"
+                  className="mobile-menu-link"
                   to={t('sections.about')}
                   href={`#${t('sections.about')}`}
                   spy
@@ -81,10 +88,10 @@ export default function Navbar() {
                   {t('about')}
                 </Link>
               </li>
-              <li>
+              <li className="mobile-menu-item">
                 <Link
-                  activeClass="text-blue-700"
-                  className="hover:text-blue-400"
+                  activeClass="active"
+                  className="mobile-menu-link"
                   to={t('sections.workExperience')}
                   href={`#${t('sections.workExperience')}`}
                   spy
@@ -98,10 +105,10 @@ export default function Navbar() {
                   {t('experience')}
                 </Link>
               </li>
-              <li>
+              <li className="mobile-menu-item">
                 <Link
-                  activeClass="text-blue-700"
-                  className="hover:text-blue-400"
+                  activeClass="active"
+                  className="mobile-menu-link"
                   to={t('sections.education')}
                   href={`#${t('sections.education')}`}
                   spy
@@ -115,10 +122,10 @@ export default function Navbar() {
                   {t('education')}
                 </Link>
               </li>
-              <li>
+              <li className="mobile-menu-item">
                 <Link
-                  activeClass="text-blue-700"
-                  className="hover:text-blue-400"
+                  activeClass="active"
+                  className="mobile-menu-link"
                   to={t('sections.sideProjects')}
                   href={`#${t('sections.sideProjects')}`}
                   spy
@@ -132,10 +139,10 @@ export default function Navbar() {
                   {t('projects')}
                 </Link>
               </li>
-              <li>
+              <li className="mobile-menu-item">
                 <Link
-                  activeClass="text-blue-700"
-                  className="hover:text-blue-400"
+                  activeClass="active"
+                  className="mobile-menu-link"
                   to={t('sections.contact')}
                   href={`#${t('sections.contact')}`}
                   spy
@@ -150,29 +157,29 @@ export default function Navbar() {
                 </Link>
               </li>
 
-              <div className="flex space-x-4 border-t-2 md:hidden">
+              <li className="mobile-menu-social md:hidden">
                 <a
-                  className="hover:text-blue-500"
+                  className="mobile-social-link"
                   href="https://drive.google.com/uc?export=download&id=14uTJA8ZUPIWCi2V-f8s8ul3-qnQsKfiF"
                   onClick={() => setIsOpen(false)}
                 >
                   <FilePdfFilled />
                 </a>
                 <a
-                  className="hover:text-blue-500"
+                  className="mobile-social-link"
                   href="https://www.linkedin.com/in/michael-lee-8967b614a/"
                   onClick={() => setIsOpen(false)}
                 >
                   <LinkedinFilled />
                 </a>
                 <a
-                  className="hover:text-blue-500"
+                  className="mobile-social-link"
                   href="https://github.com/MichaelMauriceLee"
                   onClick={() => setIsOpen(false)}
                 >
                   <GithubFilled />
                 </a>
-              </div>
+              </li>
             </ul>
           </div>
         </div>

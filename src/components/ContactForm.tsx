@@ -4,9 +4,8 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { type BaseSyntheticEvent, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Alert, Button, Spinner } from 'flowbite-react';
 import { useInView } from 'react-intersection-observer';
-import i18next from 'i18next';
+import i18next from '../i18n/i18n';
 import Card from './Card';
 import React from 'react';
 
@@ -26,7 +25,7 @@ export default function ContactForm() {
   const { t } = useTranslation();
   const { ref, inView } = useInView({ triggerOnce: true });
   const [showAlert, setShowAlert] = useState(false);
-  const [severity, setSeverity] = useState('success');
+  const [severity, setSeverity] = useState<'success' | 'error'>('success');
   const [message, setMessage] = useState('');
 
   const sendEmail = async (formValues: FormValues) => {
@@ -43,7 +42,7 @@ export default function ContactForm() {
     register,
     handleSubmit,
     reset,
-    formState: { errors, isDirty, isSubmitting },
+    formState: { errors, isSubmitting },
   } = useForm<FormValues>({
     mode: 'onTouched',
     resolver: zodResolver(FormValues),
@@ -53,16 +52,18 @@ export default function ContactForm() {
     formValues: FormValues,
     event?: BaseSyntheticEvent
   ) => {
-    event && event.preventDefault();
+    if (event) {
+      event.preventDefault();
+    }
 
     try {
       await sendEmail(formValues);
       setSeverity('success');
       setMessage(t('emailSuccessfullySent') ?? '');
       reset();
-    } catch (err: any) {
-      setSeverity('failure');
-      setMessage(err.text);
+    } catch (err: unknown) {
+      setSeverity('error');
+      setMessage(err instanceof Error ? err.message : String(err));
     } finally {
       setShowAlert(true);
       setTimeout(() => {
@@ -76,83 +77,96 @@ export default function ContactForm() {
       id={t('sections.contact') ?? ''}
       className={`mt-5 motion-safe:transition-all motion-safe:duration-1000 ${
         inView
-          ? 'opacity-1 blur-0 motion-safe:translate-x-0'
+          ? 'opacity-100 blur-0 motion-safe:translate-x-0'
           : 'motion-safe:opacity-0 motion-safe:blur-sm motion-safe:-translate-x-full'
       }`}
       ref={ref}
     >
       <Card>
-        <div className="text-2xl font-bold tracking-tight text-gray-900">
+        <div className="section-header">
           {t('contact')}
         </div>
 
+        {/* Custom Alert */}
         {showAlert && (
-          <Alert color={severity} onDismiss={() => setShowAlert(false)}>
-            <span className="font-medium">{message}</span>
-          </Alert>
+          <div className={`alert alert-${severity}`}>
+            <span>{message}</span>
+            <button 
+              type="button" 
+              className="alert-close"
+              onClick={() => setShowAlert(false)}
+              aria-label="Close alert"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
         )}
 
         <form onSubmit={handleSubmit(onSubmit)}>
-          <div className="flex flex-col">
+          <div className="form-group">
             <label htmlFor="name">{t('name')}</label>
             <input
               id="name"
               type="text"
+              className="form-input"
               {...register('name')}
               disabled={isSubmitting}
             />
             {errors.name?.message && (
-              <p className="text-red-500">{errors.name?.message}</p>
+              <p className="form-error">{errors.name?.message}</p>
             )}
 
-            <label className="mt-2" htmlFor="email">
-              {t('email')}
-            </label>
+            <label htmlFor="email">{t('email')}</label>
             <input
               id="email"
               type="text"
+              className="form-input"
               {...register('email')}
               disabled={isSubmitting}
             />
             {errors.email?.message && (
-              <p className="text-red-500">{errors.email?.message}</p>
+              <p className="form-error">{errors.email?.message}</p>
             )}
 
-            <label className="mt-2" htmlFor="subject">
-              {t('subject')}
-            </label>
+            <label htmlFor="subject">{t('subject')}</label>
             <input
               id="subject"
               type="text"
+              className="form-input"
               {...register('subject')}
               disabled={isSubmitting}
             />
             {errors.subject?.message && (
-              <p className="text-red-500">{errors.subject?.message}</p>
+              <p className="form-error">{errors.subject?.message}</p>
             )}
 
-            <label className="mt-2" htmlFor="message">
-              {t('message')}
-            </label>
+            <label htmlFor="message">{t('message')}</label>
             <textarea
               id="message"
+              className="form-input form-textarea"
               {...register('message')}
               disabled={isSubmitting}
               rows={10}
             />
             {errors.message?.message && (
-              <p className="text-red-500">{errors.message?.message}</p>
+              <p className="form-error">{errors.message?.message}</p>
             )}
           </div>
-          <Button className="mt-4" type="submit" disabled={isSubmitting}>
+          
+          <button 
+            className="btn btn-primary" 
+            type="submit" 
+            disabled={isSubmitting}
+          >
             {isSubmitting ? (
-              <div className="mr-3">
-                <Spinner size="sm" light />
-              </div>
+              <span className="spinner"></span>
             ) : (
               t('submit')
             )}
-          </Button>
+          </button>
         </form>
       </Card>
     </div>

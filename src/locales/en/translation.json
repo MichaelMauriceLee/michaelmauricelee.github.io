@@ -62,10 +62,24 @@
   ],
   "workExperience": [
     {
+      "jobTitle": "Frontend Developer",
+      "company": "Renoworks Software",
+      "location": "Calgary",
+      "dateRange": "April 2025 - Present",
+      "imageUrl": "/images/work-experience/renoworks.jpg",
+      "imageAlt": "Renoworks Software logo",
+      "notableAccomplishments": [
+        "Spearheaded the design and implementation of a new component architecture for the next-generation Renoworks platform, establishing scalable patterns and reusable UI components that improved developer velocity and code consistency.",
+        "Led feature development for a new React application built for Westlake Building Supplies (Royal), driving end-to-end implementation from requirements gathering to production deployment.",
+        "Brought in during the critical final phase of the Owens Corning project to rapidly implement key feature changes, helping deliver the application on time for a Fortune 500 building materials leader with $11 billion in annual revenue.",
+        "Drove frontend performance improvements by introducing modern tooling including React Compiler and Vite, significantly enhancing build times, runtime performance, and overall developer experience."
+      ]
+    },
+    {
       "jobTitle": "Software Developer",
       "company": "Child Friendly Care",
       "location": "Calgary",
-      "dateRange": "October 2023 - Present",
+      "dateRange": "October 2023 - April 2025",
       "imageUrl": "/images/work-experience/cf.jpg",
       "imageAlt": "Child Friendly Care logo",
       "notableAccomplishments": [

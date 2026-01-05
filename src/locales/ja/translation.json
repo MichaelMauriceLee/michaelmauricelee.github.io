@@ -62,10 +62,24 @@
   ],
   "workExperience": [
     {
+      "jobTitle": "フロントエンド開発者",
+      "company": "Renoworks Software",
+      "location": "カルガリー",
+      "dateRange": "2025年4月 - 現在",
+      "imageUrl": "/images/work-experience/renoworks.jpg",
+      "imageAlt": "Renoworks Softwareのロゴ",
+      "notableAccomplishments": [
+        "次世代Renoworksプラットフォーム向けの新しいコンポーネントアーキテクチャの設計・実装を主導し、開発速度とコードの一貫性を向上させるスケーラブルなパターンと再利用可能なUIコンポーネントを確立。",
+        "Westlake Building Supplies（Royal）向けの新規Reactアプリケーションの機能開発をリードし、要件定義から本番デプロイまでエンドツーエンドの実装を推進。",
+        "Owens Corningプロジェクトの重要な最終フェーズに投入され、主要な機能変更を迅速に実装し、年間売上高110億ドルを誇るFortune 500建材メーカー向けアプリケーションの納期内リリースに貢献。",
+        "React CompilerやViteなどのモダンツールを導入し、フロントエンドのパフォーマンス改善を推進。ビルド時間、ランタイムパフォーマンス、開発者体験を大幅に向上。"
+      ]
+    },
+    {
       "jobTitle": "ソフトウェア開発者",
       "company": "Child Friendly Care",
       "location": "カルガリー",
-      "dateRange": "2023年10月 - 現在",
+      "dateRange": "2023年10月 - 2025年4月",
       "imageUrl": "/images/work-experience/cf.jpg",
       "imageAlt": "Child Friendly Careのロゴ",
       "notableAccomplishments": [
